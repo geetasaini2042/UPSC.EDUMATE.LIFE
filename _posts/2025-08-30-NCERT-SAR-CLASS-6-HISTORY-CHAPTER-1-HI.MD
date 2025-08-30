@@ -1,5 +1,5 @@
 ---
-title: कक्षा 6 इतिहास 1 : क्या, कहाँ, कैसे और कब?
+title: "कक्षा 6 इतिहास 1 : क्या, कहाँ, कैसे और कब?"
 description: 
    अतीत का अध्ययन परिचय 
 categories: [NCERT SUMMARY, CLASS 6, HISTORY, CHAPTER 1]
