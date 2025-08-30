@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 9
 title: "About UPSC Preparation"
 description: "Know about UPSC, its importance and preparation journey"
 ---
