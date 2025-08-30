@@ -7,7 +7,6 @@ tags: [NCERT SUMMARY, CLASS 6, CHAPTER 1, NOTES, NCERT NOTES]
 #media_subpath: '/posts/20180809'
 ---
 
-
 # इतिहास – अध्याय 1 : क्या, कहाँ, कैसे और कब?
 
 ## अतीत का अध्ययन
