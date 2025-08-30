@@ -1,5 +1,5 @@
 ---
-# the default layout is 'page'
-icon: fas fa-info-circle
-order: 7
+#layout: categories
+icon: fas fa-stream
+order: 4
 ---
