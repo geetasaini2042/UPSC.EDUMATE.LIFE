@@ -5,12 +5,13 @@ order: 4
 title: "About UPSC • द्विभाषी"
 ---
 <!-- INSERT THIS where your page body/main should go.
-     (Assumes you already have header/topbar with buttons: -->
+     (Assumes you already have header/topbar with buttons: 
      
        <button id="btn-en">English</button> and <button id="btn-hi">हिंदी</button>
        
-     <!-- and a container style class `.wrap` in your existing head/css.) -->
+      and a container style class `.wrap` in your existing head/css.) -->
 
+<button id="btn-en">English</button> and <button id="btn-hi">हिंदी</button>
 <main class="wrap" id="upsc-about-main">
   <!-- English Content -->
   <article id="content-en" lang="en">
