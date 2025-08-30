@@ -1,6 +1,5 @@
 ---
 #layout: categories
-title: UPSC Result – How to Check
 icon: fas fa-stream
 order: 2
 ---
