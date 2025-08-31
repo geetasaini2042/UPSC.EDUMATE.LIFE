@@ -1,0 +1,148 @@
+---
+layout: default
+---
+
+<div style="max-width:900px;margin:auto;padding:20px;">
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.description }}</p>
+  <hr>
+
+  {% assign year = page.year %}
+  {% assign papers = site.data.upsc[year] %}
+
+  <h2 class="section-title">आधिकारिक स्रोत</h2>
+  <ul>
+    <li><a href="https://upsc.gov.in/examinations/previous-question-papers" target="_blank">UPSC आधिकारिक वेबसाइट</a></li>
+  </ul>
+
+  <!-- Prelims -->
+  <h2 class="section-title">प्रारंभिक परीक्षा (Prelims)</h2>
+  {% if papers.prelims and (papers.prelims.gs1 or papers.prelims.csat) %}
+    <ul>
+      <li>
+        सामान्य अध्ययन पेपर-I
+        {% if papers.prelims.gs1 %}
+          <ul>
+            {% for link in papers.prelims.gs1 %}
+              <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p><i>Coming Soon...</i></p>
+        {% endif %}
+      </li>
+
+      <li>
+        CSAT (Paper-II)
+        {% if papers.prelims.csat %}
+          <ul>
+            {% for link in papers.prelims.csat %}
+              <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p><i>Coming Soon...</i></p>
+        {% endif %}
+      </li>
+    </ul>
+  {% else %}
+    <p><i>Coming Soon...</i></p>
+  {% endif %}
+
+  <!-- Mains -->
+  <h2 class="section-title">मुख्य परीक्षा (Mains)</h2>
+  {% if papers.mains %}
+    <ul>
+      <li>
+        निबंध (Essay)
+        {% if papers.mains.essay %}
+          <ul>
+            {% for link in papers.mains.essay %}
+              <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p><i>Coming Soon...</i></p>
+        {% endif %}
+      </li>
+
+      <li>सामान्य अध्ययन पेपर-I (GS Paper-I)
+        {% if papers.mains.gs1 %}
+          <ul>
+            {% for link in papers.mains.gs1 %}
+              <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
+            {% endfor %}
+          </ul>
+        {% else %}<p><i>Coming Soon...</i></p>{% endif %}
+      </li>
+
+      <li>सामान्य अध्ययन पेपर-II (GS Paper-II)
+        {% if papers.mains.gs2 %}
+          <ul>
+            {% for link in papers.mains.gs2 %}
+              <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
+            {% endfor %}
+          </ul>
+        {% else %}<p><i>Coming Soon...</i></p>{% endif %}
+      </li>
+
+      <li>सामान्य अध्ययन पेपर-III (GS Paper-III)
+        {% if papers.mains.gs3 %}
+          <ul>
+            {% for link in papers.mains.gs3 %}
+              <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
+            {% endfor %}
+          </ul>
+        {% else %}<p><i>Coming Soon...</i></p>{% endif %}
+      </li>
+
+      <li>सामान्य अध्ययन पेपर-IV (GS Paper-IV)
+        {% if papers.mains.gs4 %}
+          <ul>
+            {% for link in papers.mains.gs4 %}
+              <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
+            {% endfor %}
+          </ul>
+        {% else %}<p><i>Coming Soon...</i></p>{% endif %}
+      </li>
+
+      <!-- Optional Subjects -->
+      <h3 class="section-title" style="margin-top:25px;">वैकल्पिक विषय (Optional Subjects)</h3>
+      <ul>
+        {% assign optionals = "Agriculture,Animal Husbandry & Veterinary Science,Anthropology,Botany,Chemistry,Civil Engineering,Commerce & Accountancy,Economics,Electrical Engineering,Geography,Geology,History,Law,Management,Mathematics,Mechanical Engineering,Medical Science,Philosophy,Physics,Political Science & International Relations, Psychology,Public Administration,Sociology,Statistics,Zoology,Literature of any one language" | split: "," %}
+
+        {% for subj in optionals %}
+          <li>{{ subj }}
+            {% if papers.mains[subj] %}
+              <ul>
+                {% for link in papers.mains[subj] %}
+                  <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <p><i>Coming Soon...</i></p>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </ul>
+  {% else %}
+    <p><i>Coming Soon...</i></p>
+  {% endif %}
+
+  <!-- Notification -->
+  {% if papers.notification %}
+    <h2 class="section-title">Notification</h2>
+    <p><a href="{{ papers.notification }}" target="_blank">Download Official Notification</a></p>
+  {% endif %}
+</div>
+
+<style>
+.section-title {
+  font-weight: 800;
+  font-size: 22px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  margin-top: 25px;
+}
+</style>
