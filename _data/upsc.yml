@@ -1,3 +1,70 @@
+2024:
+ prelims:
+  gs1:
+    - "https://upsc.gov.in/sites/default/files/QP-CSP-24-GENERAL-STUDIES-PAPER-I-180624.pdf"
+  csat:
+    - "https://upsc.gov.in/sites/default/files/QP-CSP-24-GENERAL-STUDIES-PAPER-II-180624.pdf"
+
+ mains:
+  essay:
+    - "https://upsc.gov.in/sites/default/files/QP_CSM_2024_Essay_03102024.pdf"
+  gs1:
+    - "https://upsc.gov.in/sites/default/files/QP_CSM_2024_GenStud_I_03102024.pdf"
+  gs2:
+    - "https://upsc.gov.in/sites/default/files/QP_CSM_2024_GenStud_II_03102024.pdf"
+  gs3:
+    - "https://upsc.gov.in/sites/default/files/QP_CSM_2024_GenStud_III_03102024.pdf"
+  gs4:
+    - "https://upsc.gov.in/sites/default/files/QP_CSM_2024_GenStud_IV_03102024.pdf"
+  optional:
+    anthropology:
+      - "https://upsc.gov.in/sites/default/files/ANTHROPOLOGY-II%20(1).pdf"
+    botany:
+      - "https://upsc.gov.in/sites/default/files/BOTANY-II%20(1).pdf"
+    chemistry:
+      - "https://upsc.gov.in/sites/default/files/CHEMISTRY-II%20(1).pdf"
+    civil_engineering:
+      - "https://upsc.gov.in/sites/default/files/CIVIL%20ENGINEERING-II%20(1).pdf"
+    commerce_accountancy:
+      - "https://upsc.gov.in/sites/default/files/COMMERCE%20ACCOUNTANCY-II%20(1).pdf"
+    economics:
+      - "https://upsc.gov.in/sites/default/files/ECONOMICS-II%20(1).pdf"
+    electrical_engineering:
+      - "https://upsc.gov.in/sites/default/files/ELECTRICAL%20ENGINEERING-II%20(1).pdf"
+    geography:
+      - "https://upsc.gov.in/sites/default/files/GEOGRAPHY-II%20(1).pdf"
+    geology:
+      - "https://upsc.gov.in/sites/default/files/GEOLOGY-II%20(1).pdf"
+    history:
+      - "https://upsc.gov.in/sites/default/files/HISTORY_II%20%281%29.pdf"
+    law:
+      - "https://upsc.gov.in/sites/default/files/LAW-II%20(1).pdf"
+    management:
+      - "https://upsc.gov.in/sites/default/files/MANAGEMENT-II%20(1).pdf"
+    mathematics:
+      - "https://upsc.gov.in/sites/default/files/MATHEMATICS-II%20(1).pdf"
+    medical_science:
+      - "https://upsc.gov.in/sites/default/files/MEDICAL%20SCIENCE-II%20(1).pdf"
+    philosophy:
+      - "https://upsc.gov.in/sites/default/files/PHILOSOPHY-II%20(1).pdf"
+    physics:
+      - "https://upsc.gov.in/sites/default/files/PHYSICS-II%20(1).pdf"
+    political_science_international_relations:
+      - "https://upsc.gov.in/sites/default/files/POLITICAL%20SCIENCE%20%26%20INTERNATIONAL%20RELATIONS-II%20(1).pdf"
+    psychology:
+      - "https://upsc.gov.in/sites/default/files/PSYCHOLOGY-II%20(1).pdf"
+    public_administration:
+      - "https://upsc.gov.in/sites/default/files/PUBLIC%20ADMINISTRATION-II%20(1).pdf"
+    sociology:
+      - "https://upsc.gov.in/sites/default/files/SOCIOLOGY-II%20(1).pdf"
+    statistics:
+      - "https://upsc.gov.in/sites/default/files/STATISTICS-II%20(1).pdf"
+    zoology:
+      - "https://upsc.gov.in/sites/default/files/ZOOLOGY-II%20(1).pdf"
+
+notification:
+  - "https://upsc.gov.in/sites/default/files/Notif-CSP-2024-Engl-220125.pdf"
+
 2022:
   prelims:
     gs1:
