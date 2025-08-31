@@ -7,8 +7,8 @@ layout: default
   <p>{{ page.description }}</p>
   <hr>
 
-  {% assign year = page.year %}
-  {% assign papers = site.data.upsc[year] %}
+  {% assign year_key = page.year %}   {# ex: Y2024 #}
+  {% assign papers = site.data.PYQS[year_key] %}
 
   <h2>आधिकारिक स्रोत</h2>
   <ul>
@@ -61,9 +61,9 @@ layout: default
   {% if papers.mains %}
     <ul>
       <!-- Essay -->
-      <li>निबंध (Essay)
-        <ul>
-          {% if papers.mains.essay %}
+      {% if papers.mains.essay %}
+        <li>निबंध (ESSAY)
+          <ul>
             {% for link in papers.mains.essay %}
               {% if link != "" %}
                 <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
@@ -71,20 +71,16 @@ layout: default
                 <li><i>Coming Soon...</i></li>
               {% endif %}
             {% endfor %}
-          {% else %}
-            <li><i>Coming Soon...</i></li>
-          {% endif %}
-        </ul>
-      </li>
+          </ul>
+        </li>
+      {% endif %}
 
       <!-- GS Papers -->
-      {% assign gs_papers = "सामान्य अध्ययन पेपर-I,सामान्य अध्ययन पेपर-II,सामान्य अध्ययन पेपर-III,सामान्य अध्ययन पेपर-IV" | split: "," %}
       {% assign gs_keys = "gs1,gs2,gs3,gs4" | split: "," %}
-      {% for i in (0..3) %}
-        <li>{{ gs_papers[i] }}
-          <ul>
-            {% assign key = gs_keys[i] %}
-            {% if papers.mains[key] %}
+      {% for key in gs_keys %}
+        {% if papers.mains[key] %}
+          <li>{{ key | replace: "gs", "GENERAL STUDIES PAPER " | upcase }}
+            <ul>
               {% for link in papers.mains[key] %}
                 {% if link != "" %}
                   <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
@@ -92,36 +88,29 @@ layout: default
                   <li><i>Coming Soon...</i></li>
                 {% endif %}
               {% endfor %}
-            {% else %}
-              <li><i>Coming Soon...</i></li>
-            {% endif %}
-          </ul>
-        </li>
+            </ul>
+          </li>
+        {% endif %}
       {% endfor %}
 
       <!-- Optional Subjects -->
-      <h3 style="margin-top:20px;">वैकल्पिक विषय (Optional Subjects)</h3>
-      {% assign optionals = "Agriculture,Animal Husbandry & Veterinary Science,Anthropology,Botany,Chemistry,Civil Engineering,Commerce & Accountancy,Economics,Electrical Engineering,Geography,Geology,History,Law,Management,Mathematics,Mechanical Engineering,Medical Science,Philosophy,Physics,Political Science & International Relations,Psychology,Public Administration,Sociology,Statistics,Zoology,Literature of any one language" | split: "," %}
-
-      <ul>
-        {% for subj in optionals %}
-          <li>{{ subj }}
+      {% assign optional_keys = papers.mains | where_exp: "item", "item[0] != 'essay' and item[0] contains '_'" %}
+      {% for key in papers.mains %}
+        {% if key[0] != "essay" and key[1] %}
+          <li>{{ key[0] | replace: "_", " " | upcase }}
             <ul>
-              {% if papers.mains[subj] %}
-                {% for link in papers.mains[subj] %}
-                  {% if link != "" %}
-                    <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
-                  {% else %}
-                    <li><i>Coming Soon...</i></li>
-                  {% endif %}
-                {% endfor %}
-              {% else %}
-                <li><i>Coming Soon...</i></li>
-              {% endif %}
+              {% for link in key[1] %}
+                {% if link != "" %}
+                  <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
+                {% else %}
+                  <li><i>Coming Soon...</i></li>
+                {% endif %}
+              {% endfor %}
             </ul>
           </li>
-        {% endfor %}
-      </ul>
+        {% endif %}
+      {% endfor %}
+
     </ul>
   {% else %}
     <p><i>Coming Soon...</i></p>
