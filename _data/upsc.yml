@@ -1,0 +1,26 @@
+2022:
+  prelims:
+    gs1:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-22-GENERAL-STUDIES-PAPER%20I-190922.pdf"
+    csat: []  # अभी उपलब्ध नहीं → Coming Soon दिखेगा
+  mains:
+    essay:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-22-ESSAY-190922.pdf"
+    gs1:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-22-GENERAL-STUDIES-PAPER%20I-190922.pdf"
+    gs2:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-22-GENERAL-STUDIES-PAPER-II-190922.pdf"
+    gs3:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-22-GENERAL-STUDIES-PAPER-III-190922.pdf"
+    gs4:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-22-GENERAL-STUDIES-PAPER%20IV-190922.pdf"
+    # Optional विषयों की लिस्ट — यदि उपलब्ध हों, यहाँ डालें; अभी खाली
+    Anthropology: []
+    History: []
+    Geography: []
+    Political Science & International Relations: []
+    Sociology: []
+    Public Administration: []
+    Economics: []
+    # ... और बाकी Optional subjects
+  notification: ""  # Official notification नहीं मिला → Coming Soon दिखेगा
