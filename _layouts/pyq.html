@@ -17,12 +17,18 @@ layout: default
   {% assign papers = site.data.PYQS[year_key] %}
 
   <h2 style="display:flex;align-items:center;gap:8px;">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#4b6cb7" class="bi bi-link-45deg" viewBox="0 0 16 16">
-      <path d="M4.715 6.542a3 3 0 0 1 4.243 0l1.414 1.414a3 3 0 0 1-4.243 4.243L4.715 10.785a3 3 0 0 1 0-4.243z"/>
-      <path d="M6.343 5.657a2 2 0 1 1 2.828 2.828l-1.414 1.414a2 2 0 1 1-2.828-2.828l1.414-1.414z"/>
-    </svg>
-    आधिकारिक स्रोत
-  </h2>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:url(#linkGradient);">
+    <defs>
+      <linearGradient id="linkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#4b6cb7"/>
+        <stop offset="100%" stop-color="#182848"/>
+      </linearGradient>
+    </defs>
+    <path d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3z"/>
+    <path d="M5 5h5v2H6.414l9.293 9.293-1.414 1.414L5 6.414V5z"/>
+  </svg>
+  आधिकारिक स्रोत
+</h2>
   <ul style="list-style:none;padding-left:0;">
     <li><a href="https://upsc.gov.in/examinations/previous-question-papers" target="_blank" style="color:#182848;text-decoration:none;font-weight:600;">UPSC आधिकारिक वेबसाइट</a></li>
   </ul>
@@ -130,7 +136,7 @@ layout: default
       {% endfor %}
 
       <!-- Optional Subjects -->
-      <h3 style="margin-top:20px;color:#4b6cb7;">OPTIONAL SUBJECTS</h3>
+      <h3 style="margin-top:20px;color:#d9ff00;">OPTIONAL SUBJECTS</h3>
       {% if papers.mains.optional %}
         {% for subj_key in papers.mains.optional %}
           <li style="margin-bottom:10px;"><strong>{{ subj_key[0] | replace: "_", " " | upcase }}</strong>
