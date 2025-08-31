@@ -136,7 +136,7 @@ layout: default
       {% endfor %}
 
       <!-- Optional Subjects -->
-      <h3 style="margin-top:20px;color:#d9ff00;">OPTIONAL SUBJECTS</h3>
+      <h4 style="margin-top:20px;color:#d9ff00;">OPTIONAL SUBJECTS</h4>
       {% if papers.mains.optional %}
         {% for subj_key in papers.mains.optional %}
           <li style="margin-bottom:10px;"><strong>{{ subj_key[0] | replace: "_", " " | upcase }}</strong>
