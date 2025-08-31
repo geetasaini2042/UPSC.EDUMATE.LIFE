@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div style="max-width:800px;margin:auto;padding:20px;">
+<div style="max-width:900px;margin:auto;padding:20px;">
   <h1>{{ page.title }}</h1>
   <p>{{ page.description }}</p>
   <hr>
@@ -24,7 +24,7 @@ layout: default
         <ul>
           {% if papers.prelims.gs1 %}
             {% for link in papers.prelims.gs1 %}
-              {% if link and link != "" %}
+              {% if link != "" %}
                 <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
               {% else %}
                 <li><i>Coming Soon...</i></li>
@@ -35,13 +35,12 @@ layout: default
           {% endif %}
         </ul>
       </li>
-
       <li>
         CSAT (Paper-II)
         <ul>
           {% if papers.prelims.csat %}
             {% for link in papers.prelims.csat %}
-              {% if link and link != "" %}
+              {% if link != "" %}
                 <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
               {% else %}
                 <li><i>Coming Soon...</i></li>
@@ -61,14 +60,33 @@ layout: default
   <h2>मुख्य परीक्षा (Mains)</h2>
   {% if papers.mains %}
     <ul>
-      {% assign subjects = "essay,general_studies_1,general_studies_2,general_studies_3,general_studies_4,optional_subject_1,optional_subject_2,indian_language,english" | split: "," %}
-      {% for sub in subjects %}
-        <li>
-          {{ sub | replace: "_", " " | capitalize }}
+      <!-- Essay -->
+      <li>निबंध (Essay)
+        <ul>
+          {% if papers.mains.essay %}
+            {% for link in papers.mains.essay %}
+              {% if link != "" %}
+                <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
+              {% else %}
+                <li><i>Coming Soon...</i></li>
+              {% endif %}
+            {% endfor %}
+          {% else %}
+            <li><i>Coming Soon...</i></li>
+          {% endif %}
+        </ul>
+      </li>
+
+      <!-- GS Papers -->
+      {% assign gs_papers = "सामान्य अध्ययन पेपर-I,सामान्य अध्ययन पेपर-II,सामान्य अध्ययन पेपर-III,सामान्य अध्ययन पेपर-IV" | split: "," %}
+      {% assign gs_keys = "gs1,gs2,gs3,gs4" | split: "," %}
+      {% for i in (0..3) %}
+        <li>{{ gs_papers[i] }}
           <ul>
-            {% if papers.mains[sub] %}
-              {% for link in papers.mains[sub] %}
-                {% if link and link != "" %}
+            {% assign key = gs_keys[i] %}
+            {% if papers.mains[key] %}
+              {% for link in papers.mains[key] %}
+                {% if link != "" %}
                   <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
                 {% else %}
                   <li><i>Coming Soon...</i></li>
@@ -80,6 +98,30 @@ layout: default
           </ul>
         </li>
       {% endfor %}
+
+      <!-- Optional Subjects -->
+      <h3 style="margin-top:20px;">वैकल्पिक विषय (Optional Subjects)</h3>
+      {% assign optionals = "Agriculture,Animal Husbandry & Veterinary Science,Anthropology,Botany,Chemistry,Civil Engineering,Commerce & Accountancy,Economics,Electrical Engineering,Geography,Geology,History,Law,Management,Mathematics,Mechanical Engineering,Medical Science,Philosophy,Physics,Political Science & International Relations,Psychology,Public Administration,Sociology,Statistics,Zoology,Literature of any one language" | split: "," %}
+
+      <ul>
+        {% for subj in optionals %}
+          <li>{{ subj }}
+            <ul>
+              {% if papers.mains[subj] %}
+                {% for link in papers.mains[subj] %}
+                  {% if link != "" %}
+                    <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
+                  {% else %}
+                    <li><i>Coming Soon...</i></li>
+                  {% endif %}
+                {% endfor %}
+              {% else %}
+                <li><i>Coming Soon...</i></li>
+              {% endif %}
+            </ul>
+          </li>
+        {% endfor %}
+      </ul>
     </ul>
   {% else %}
     <p><i>Coming Soon...</i></p>
