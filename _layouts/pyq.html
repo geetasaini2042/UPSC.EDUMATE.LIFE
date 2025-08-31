@@ -163,18 +163,4 @@ layout: default
   {% else %}
     <p><i>Coming Soon...</i></p>
   {% endif %}
-
-  <!-- Notification -->
-  <h2 style="margin-top:30px;display:flex;align-items:center;gap:6px;">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="red" class="bi bi-bell" viewBox="0 0 16 16">
-      <path d="M8 16a2 2 0 0 0 1.985-1.75H6.015A2 2 0 0 0 8 16zm.104-14a2 2 0 0 0-1.208.384c-.394.28-.832.688-1.124 1.216-.453.84-.752 1.94-.868 3.004a5.014 5.014 0 0 1-.188 1.05c-.11.355-.19.703-.235 1.02l-.008.065c-.03.27-.057.506-.075.7-.034.35-.054.587-.054.587h10s0-.238-.021-.588c-.017-.194-.043-.43-.074-.7l-.008-.064a4.42 4.42 0 0 0-.235-1.02 5.03 5.03 0 0 1-.188-1.05c-.116-1.064-.415-2.164-.868-3.004-.292-.528-.73-.936-1.124-1.216a2 2 0 0 0-1.208-.384h-.584z"/>
-    </svg>
-    Notification
-  </h2>
-  {% if papers.notification and papers.notification != "" %}
-    <p><a href="{{ papers.notification[0] }}" target="_blank" style="font-weight:600;color:red;">Download Official Notification</a></p>
-  {% else %}
-    <p><i>Coming Soon...</i></p>
-  {% endif %}
-
 </div>
