@@ -94,12 +94,11 @@ layout: default
       {% endfor %}
 
       <!-- Optional Subjects -->
-      {% assign optional_keys = papers.mains | where_exp: "item", "item[0] != 'essay' and item[0] contains '_'" %}
-      {% for key in papers.mains %}
-        {% if key[0] != "essay" and key[1] %}
-          <li>{{ key[0] | replace: "_", " " | upcase }}
+      {% if papers.mains.optional %}
+        {% for subj_key in papers.mains.optional %}
+          <li>{{ subj_key[0] | replace: "_", " " | upcase }}
             <ul>
-              {% for link in key[1] %}
+              {% for link in subj_key[1] %}
                 {% if link != "" %}
                   <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
                 {% else %}
@@ -108,8 +107,8 @@ layout: default
               {% endfor %}
             </ul>
           </li>
-        {% endif %}
-      {% endfor %}
+        {% endfor %}
+      {% endif %}
 
     </ul>
   {% else %}
@@ -119,7 +118,7 @@ layout: default
   <!-- Notification -->
   <h2>Notification</h2>
   {% if papers.notification and papers.notification != "" %}
-    <p><a href="{{ papers.notification }}" target="_blank">Download Official Notification</a></p>
+    <p><a href="{{ papers.notification[0] }}" target="_blank">Download Official Notification</a></p>
   {% else %}
     <p><i>Coming Soon...</i></p>
   {% endif %}
