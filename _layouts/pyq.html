@@ -2,30 +2,48 @@
 layout: default
 ---
 
-<div style="max-width:900px;margin:auto;padding:20px;">
-  <h1>{{ page.title }}</h1>
-  <p>{{ page.description }}</p>
-  <hr>
+<div style="max-width:900px;margin:auto;padding:20px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height:1.6;">
+  <h1 style="display:flex;align-items:center;gap:10px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+      <path d="M5 3.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+      <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zM1 2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v12a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2V2z"/>
+    </svg>
+    {{ page.title }}
+  </h1>
+  <p style="color:#555;">{{ page.description }}</p>
+  <hr style="border:none;height:2px;background:linear-gradient(to right, #4b6cb7, #182848);margin:20px 0;">
 
-  {% assign year_key = page.year %}   {# ex: Y2024 #}
+  {% assign year_key = page.year %}
   {% assign papers = site.data.PYQS[year_key] %}
 
-  <h2>आधिकारिक स्रोत</h2>
-  <ul>
-    <li><a href="https://upsc.gov.in/examinations/previous-question-papers" target="_blank">UPSC आधिकारिक वेबसाइट</a></li>
+  <h2 style="display:flex;align-items:center;gap:8px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#4b6cb7" class="bi bi-link-45deg" viewBox="0 0 16 16">
+      <path d="M4.715 6.542a3 3 0 0 1 4.243 0l1.414 1.414a3 3 0 0 1-4.243 4.243L4.715 10.785a3 3 0 0 1 0-4.243z"/>
+      <path d="M6.343 5.657a2 2 0 1 1 2.828 2.828l-1.414 1.414a2 2 0 1 1-2.828-2.828l1.414-1.414z"/>
+    </svg>
+    आधिकारिक स्रोत
+  </h2>
+  <ul style="list-style:none;padding-left:0;">
+    <li><a href="https://upsc.gov.in/examinations/previous-question-papers" target="_blank" style="color:#182848;text-decoration:none;font-weight:600;">UPSC आधिकारिक वेबसाइट</a></li>
   </ul>
 
   <!-- Prelims -->
-  <h2>प्रारंभिक परीक्षा (Prelims)</h2>
+  <h2 style="margin-top:30px;">प्रारंभिक परीक्षा (Prelims)</h2>
   {% if papers.prelims %}
-    <ul>
-      <li>
-        सामान्य अध्ययन पेपर-I
+    <ul style="list-style:none;padding-left:0;">
+      <li style="margin-bottom:10px;">
+        <strong>सामान्य अध्ययन पेपर-I</strong>
         <ul>
           {% if papers.prelims.gs1 %}
             {% for link in papers.prelims.gs1 %}
               {% if link != "" %}
-                <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
+                <li style="margin:5px 0;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+                    <path d="M8 5v5.5l3-3-1.5-1.5L8 5z"/>
+                    <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6.5L14 4.5z"/>
+                  </svg>
+                  <a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a>
+                </li>
               {% else %}
                 <li><i>Coming Soon...</i></li>
               {% endif %}
@@ -35,13 +53,19 @@ layout: default
           {% endif %}
         </ul>
       </li>
-      <li>
-        CSAT (Paper-II)
+      <li style="margin-bottom:10px;">
+        <strong>CSAT (Paper-II)</strong>
         <ul>
           {% if papers.prelims.csat %}
             {% for link in papers.prelims.csat %}
               {% if link != "" %}
-                <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
+                <li style="margin:5px 0;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+                    <path d="M8 5v5.5l3-3-1.5-1.5L8 5z"/>
+                    <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6.5L14 4.5z"/>
+                  </svg>
+                  <a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a>
+                </li>
               {% else %}
                 <li><i>Coming Soon...</i></li>
               {% endif %}
@@ -57,16 +81,22 @@ layout: default
   {% endif %}
 
   <!-- Mains -->
-  <h2>मुख्य परीक्षा (Mains)</h2>
+  <h2 style="margin-top:30px;">मुख्य परीक्षा (Mains)</h2>
   {% if papers.mains %}
-    <ul>
+    <ul style="list-style:none;padding-left:0;">
       <!-- Essay -->
       {% if papers.mains.essay %}
-        <li>निबंध (ESSAY)
+        <li style="margin-bottom:10px;"><strong>निबंध (ESSAY)</strong>
           <ul>
             {% for link in papers.mains.essay %}
               {% if link != "" %}
-                <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
+                <li style="margin:5px 0;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+                    <path d="M8 5v5.5l3-3-1.5-1.5L8 5z"/>
+                    <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6.5L14 4.5z"/>
+                  </svg>
+                  <a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a>
+                </li>
               {% else %}
                 <li><i>Coming Soon...</i></li>
               {% endif %}
@@ -79,11 +109,17 @@ layout: default
       {% assign gs_keys = "gs1,gs2,gs3,gs4" | split: "," %}
       {% for key in gs_keys %}
         {% if papers.mains[key] %}
-          <li>{{ key | replace: "gs", "GENERAL STUDIES PAPER " | upcase }}
+          <li style="margin-bottom:10px;"><strong>{{ key | replace: "gs", "GENERAL STUDIES PAPER " | upcase }}</strong>
             <ul>
               {% for link in papers.mains[key] %}
                 {% if link != "" %}
-                  <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
+                  <li style="margin:5px 0;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff6600" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+                      <path d="M8 5v5.5l3-3-1.5-1.5L8 5z"/>
+                      <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6.5L14 4.5z"/>
+                    </svg>
+                    <a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a>
+                  </li>
                 {% else %}
                   <li><i>Coming Soon...</i></li>
                 {% endif %}
@@ -94,14 +130,20 @@ layout: default
       {% endfor %}
 
       <!-- Optional Subjects -->
-      <h3>OPTIONAL SUBJECTS</h3>
+      <h3 style="margin-top:20px;color:#4b6cb7;">OPTIONAL SUBJECTS</h3>
       {% if papers.mains.optional %}
         {% for subj_key in papers.mains.optional %}
-          <li>{{ subj_key[0] | replace: "_", " " | upcase }}
+          <li style="margin-bottom:10px;"><strong>{{ subj_key[0] | replace: "_", " " | upcase }}</strong>
             <ul>
               {% for link in subj_key[1] %}
                 {% if link != "" %}
-                  <li><a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a></li>
+                  <li style="margin:5px 0;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4b6cb7" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+                      <path d="M8 5v5.5l3-3-1.5-1.5L8 5z"/>
+                      <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6.5L14 4.5z"/>
+                    </svg>
+                    <a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a>
+                  </li>
                 {% else %}
                   <li><i>Coming Soon...</i></li>
                 {% endif %}
@@ -117,9 +159,14 @@ layout: default
   {% endif %}
 
   <!-- Notification -->
-  <h2>Notification</h2>
+  <h2 style="margin-top:30px;display:flex;align-items:center;gap:6px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="red" class="bi bi-bell" viewBox="0 0 16 16">
+      <path d="M8 16a2 2 0 0 0 1.985-1.75H6.015A2 2 0 0 0 8 16zm.104-14a2 2 0 0 0-1.208.384c-.394.28-.832.688-1.124 1.216-.453.84-.752 1.94-.868 3.004a5.014 5.014 0 0 1-.188 1.05c-.11.355-.19.703-.235 1.02l-.008.065c-.03.27-.057.506-.075.7-.034.35-.054.587-.054.587h10s0-.238-.021-.588c-.017-.194-.043-.43-.074-.7l-.008-.064a4.42 4.42 0 0 0-.235-1.02 5.03 5.03 0 0 1-.188-1.05c-.116-1.064-.415-2.164-.868-3.004-.292-.528-.73-.936-1.124-1.216a2 2 0 0 0-1.208-.384h-.584z"/>
+    </svg>
+    Notification
+  </h2>
   {% if papers.notification and papers.notification != "" %}
-    <p><a href="{{ papers.notification[0] }}" target="_blank">Download Official Notification</a></p>
+    <p><a href="{{ papers.notification[0] }}" target="_blank" style="font-weight:600;color:red;">Download Official Notification</a></p>
   {% else %}
     <p><i>Coming Soon...</i></p>
   {% endif %}
