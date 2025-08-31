@@ -16,8 +16,10 @@ mains:
   gs4:
     - "https://upsc.gov.in/sites/default/files/QP_CSM_2024_GenStud_IV_03102024.pdf"
   optional:
-    anthropology:
-      - "https://upsc.gov.in/sites/default/files/ANTHROPOLOGY-II%20(1).pdf"
+    Anthropology Paper - I :
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ANTHROPOLOGY-PAPER-I-031024.pdf"
+    Anthropology Paper - II :
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ANTHROPOLOGY-PAPER-II-031024.pdf"
     botany:
       - "https://upsc.gov.in/sites/default/files/BOTANY-II%20(1).pdf"
     chemistry:
