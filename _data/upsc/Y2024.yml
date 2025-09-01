@@ -7,6 +7,7 @@ prelims:
 mains:
   essay:
     - "https://upsc.gov.in/sites/default/files/QP_CSM_2024_ESSAY_03102024.pdf"
+
   gs1:
     - "https://upsc.gov.in/sites/default/files/QP_CSM_2024_GenStud_I_03102024.pdf"
   gs2:
@@ -23,54 +24,76 @@ mains:
       - "https://example.com/compulsory-indian-language.pdf"
 
   optional:
-    Anthropology_Paper_I:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ANTHROPOLOGY-PAPER-I-031024.pdf"
-    Anthropology_Paper_II:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ANTHROPOLOGY-PAPER-II-031024.pdf"
-    Agriculture_Paper_I:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-AGRICULTURE-PAPER-I-031024.pdf"
-    Agriculture_Paper_II:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-AGRICULTURE-PAPER-II-031024.pdf"
-    Animal_Husbandry_and_Veterinary_Science_Paper_I:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ANIM-HUSB-VET-SCIENCE-PAPER-I-031024.pdf"
-    Animal_Husbandry_and_Veterinary_Science_Paper_II:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ANIM-HUSB-VET-SCIENCE-PAPER-II-031024.pdf"
-    Botany_Paper_I:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-BOTANY-PAPER-I-031024.pdf"
-    Botany_Paper_II:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-BOTANY-PAPER-II-031024.pdf"
-    Chemistry_Paper_I:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-CHEMISTRY-PAPER-I-031024.pdf"
-    Chemistry_Paper_II:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-CHEMISTRY-PAPER-II-031024.pdf"
-    Civil_Engineering_Paper_I:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-CIVIL-ENGINEERING-PAPER-I-031024.pdf"
-    Civil_Engineering_Paper_II:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-CIVIL-ENGINEERING-PAPER-II-031024.pdf"
-    Commerce_and_Accountancy_Paper_I:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-COMMERCE-AND-ACCOUNTANCY-PAPER-I-031024.pdf"
-    Commerce_and_Accountancy_Paper_II:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-COMMERCE-AND-ACCOUNTANCY-PAPER-II-031024.pdf"
-    Economics_Paper_I:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ECONOMICS-PAPER-I-031024.pdf"
-    Economics_Paper_II:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ECONOMICS-PAPER-II-031024.pdf"
-    Electrical_Engineering_Paper_I:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ELECTRICAL-ENGINEERING-PAPER-I-031024.pdf"
-    Electrical_Engineering_Paper_II:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ELECTRICAL-ENGINEERING-PAPER-II-031024.pdf"
-    Geography_Paper_I:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-GEOGRAPHY-PAPER-I-031024.pdf"
-    Geography_Paper_II:
-      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-GEOGRAPHY-PAPER-II-031024.pdf"
-    # बाक़ी subjects इसी format में रखे जाएँगे
+    Anthropology:
+      Paper_I: 
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ANTHROPOLOGY-PAPER-I-031024.pdf"
+      Paper_II: 
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ANTHROPOLOGY-PAPER-II-031024.pdf"
+
+    Agriculture:
+      Paper_I:
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-AGRICULTURE-PAPER-I-031024.pdf"
+      Paper_II:
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-AGRICULTURE-PAPER-II-031024.pdf"
+
+    Animal_Husbandry_and_Veterinary_Science:
+      Paper_I:
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ANIM-HUSB-VET-SCIENCE-PAPER-I-031024.pdf"
+      Paper_II:
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ANIM-HUSB-VET-SCIENCE-PAPER-II-031024.pdf"
+
+    Botany:
+      Paper_I:
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-BOTANY-PAPER-I-031024.pdf"
+      Paper_II:
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-BOTANY-PAPER-II-031024.pdf"
+
+    Chemistry:
+      Paper_I:
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-CHEMISTRY-PAPER-I-031024.pdf"
+      Paper_II:
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-CHEMISTRY-PAPER-II-031024.pdf"
+
+    Civil_Engineering:
+      Paper_I:
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-CIVIL-ENGINEERING-PAPER-I-031024.pdf"
+      Paper_II:
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-CIVIL-ENGINEERING-PAPER-II-031024.pdf"
+
+    Commerce_and_Accountancy:
+      Paper_I:
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-COMMERCE-AND-ACCOUNTANCY-PAPER-I-031024.pdf"
+      Paper_II:
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-COMMERCE-AND-ACCOUNTANCY-PAPER-II-031024.pdf"
+
+    Economics:
+      Paper_I:
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ECONOMICS-PAPER-I-031024.pdf"
+      Paper_II:
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ECONOMICS-PAPER-II-031024.pdf"
+
+    Electrical_Engineering:
+      Paper_I:
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ELECTRICAL-ENGINEERING-PAPER-I-031024.pdf"
+      Paper_II:
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ELECTRICAL-ENGINEERING-PAPER-II-031024.pdf"
+
+    Geography:
+      Paper_I:
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-GEOGRAPHY-PAPER-I-031024.pdf"
+      Paper_II:
+        - "https://upsc.gov.in/sites/default/files/QP-CSM-24-GEOGRAPHY-PAPER-II-031024.pdf"
+
+    # बाक़ी optional subjects इसी format में जोड़ें
 
   literature:
-    Hindi_Literature_Paper_I:
-      - "https://example.com/hindi-literature-paper1.pdf"
-    Hindi_Literature_Paper_II:
-      - "https://example.com/hindi-literature-paper2.pdf"
-    English_Literature_Paper_I:
-      - "https://example.com/english-literature-paper1.pdf"
-    English_Literature_Paper_II:
-      - "https://example.com/english-literature-paper2.pdf"
+    Hindi:
+      Paper_I:
+        - "https://example.com/hindi-literature-paper1.pdf"
+      Paper_II:
+        - "https://example.com/hindi-literature-paper2.pdf"
+    English:
+      Paper_I:
+        - "https://example.com/english-literature-paper1.pdf"
+      Paper_II:
+        - "https://example.com/english-literature-paper2.pdf"
