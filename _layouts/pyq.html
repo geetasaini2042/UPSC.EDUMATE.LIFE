@@ -11,13 +11,13 @@ layout: default
   {% assign papers = site.data.upsc[year] %}
 
   <!-- ✅ PRELIMS -->
-  <h2>📝 प्रारंभिक परीक्षा (Prelims)</h2>
+  <h2>📝 Prelims Examination</h2>
   <ul>
     <li>
       <b>GS Paper-I:</b>
       {% for link in papers.prelims.gs1 %}
         {% if link != "" %}
-          <a href="{{ link }}" target="_blank">📄 Link {{ forloop.index }}</a>
+          <a href="{{ link }}" target="_blank">📄 Download</a>
         {% endif %}
       {% endfor %}
     </li>
@@ -25,7 +25,7 @@ layout: default
       <b>CSAT (Paper-II):</b>
       {% for link in papers.prelims.csat %}
         {% if link != "" %}
-          <a href="{{ link }}" target="_blank">📄 Link {{ forloop.index }}</a>
+          <a href="{{ link }}" target="_blank">📄 Download</a>
         {% endif %}
       {% endfor %}
     </li>
@@ -34,80 +34,92 @@ layout: default
   <hr>
 
   <!-- ✅ MAINS -->
-  <h2>📚 मुख्य परीक्षा (Mains)</h2>
+  <h2>📚 Mains Examination</h2>
 
   <!-- Essay -->
-  <h3>✍️ निबंध</h3>
+  <h3>✍️ Essay</h3>
   {% for link in papers.mains.essay %}
     {% if link != "" %}
-      <a href="{{ link }}" target="_blank">📄 Link {{ forloop.index }}</a><br>
+      <a href="{{ link }}" target="_blank">📄 Download</a><br>
     {% endif %}
   {% endfor %}
 
   <!-- Compulsory -->
-  <h3>📖 अनिवार्य विषय</h3>
-  <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
+  <h3>📖 Compulsory Papers</h3>
+  <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;text-align:center;">
     <tr>
-      <th>विषय</th>
-      <th>प्रश्नपत्र लिंक</th>
+      <th>Subject</th>
+      <th>Paper 1</th>
+      <th>Paper 2</th>
     </tr>
     {% for subj in papers.mains.compulsory %}
       {% assign subject_name = subj[0] %}
       {% assign links = subj[1] %}
       <tr>
-        <td><b>{{ subject_name | replace:"_"," " | upcase }}</b></td>
+        <td><b>{{ subject_name | replace:"_"," " | capitalize }}</b></td>
         <td>
-          {% for link in links %}
-            {% if link != "" %}
-              <a href="{{ link }}" target="_blank">📄 Link {{ forloop.index }}</a><br>
-            {% endif %}
-          {% endfor %}
+          {% if links.size > 0 and links[0] != "" %}
+            <a href="{{ links[0] }}" target="_blank">Download</a>
+          {% endif %}
+        </td>
+        <td>
+          {% if links.size > 1 and links[1] != "" %}
+            <a href="{{ links[1] }}" target="_blank">Download</a>
+          {% endif %}
         </td>
       </tr>
     {% endfor %}
   </table>
 
   <!-- Optional -->
-  <h3>📘 वैकल्पिक विषय</h3>
-  <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
+  <h3>📘 Optional Subjects</h3>
+  <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;text-align:center;">
     <tr>
-      <th>विषय</th>
-      <th>प्रश्नपत्र लिंक</th>
+      <th>Subject</th>
+      <th>Paper 1</th>
+      <th>Paper 2</th>
     </tr>
     {% for subj in papers.mains.optional %}
       {% assign subject_name = subj[0] %}
       {% assign links = subj[1] %}
       <tr>
-        <td><b>{{ subject_name | replace:"_"," " | upcase }}</b></td>
+        <td><b>{{ subject_name | replace:"_"," " | capitalize }}</b></td>
         <td>
-          {% for link in links %}
-            {% if link != "" %}
-              <a href="{{ link }}" target="_blank">📄 Link {{ forloop.index }}</a><br>
-            {% endif %}
-          {% endfor %}
+          {% if links.size > 0 and links[0] != "" %}
+            <a href="{{ links[0] }}" target="_blank">Download</a>
+          {% endif %}
+        </td>
+        <td>
+          {% if links.size > 1 and links[1] != "" %}
+            <a href="{{ links[1] }}" target="_blank">Download</a>
+          {% endif %}
         </td>
       </tr>
     {% endfor %}
   </table>
 
   <!-- Literature -->
-  <h3>📕 साहित्य विषय</h3>
-  <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
+  <h3>📕 Literature Subjects</h3>
+  <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;text-align:center;">
     <tr>
-      <th>भाषा</th>
-      <th>प्रश्नपत्र लिंक</th>
+      <th>Language</th>
+      <th>Paper 1</th>
+      <th>Paper 2</th>
     </tr>
     {% for subj in papers.mains.literature %}
       {% assign subject_name = subj[0] %}
       {% assign links = subj[1] %}
       <tr>
-        <td><b>{{ subject_name | replace:"_"," " | upcase }}</b></td>
+        <td><b>{{ subject_name | replace:"_"," " | capitalize }}</b></td>
         <td>
-          {% for link in links %}
-            {% if link != "" %}
-              <a href="{{ link }}" target="_blank">📄 Link {{ forloop.index }}</a><br>
-            {% endif %}
-          {% endfor %}
+          {% if links.size > 0 and links[0] != "" %}
+            <a href="{{ links[0] }}" target="_blank">Download</a>
+          {% endif %}
+        </td>
+        <td>
+          {% if links.size > 1 and links[1] != "" %}
+            <a href="{{ links[1] }}" target="_blank">Download</a>
+          {% endif %}
         </td>
       </tr>
     {% endfor %}
