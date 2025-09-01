@@ -2,165 +2,225 @@
 layout: default
 ---
 
-<div style="max-width:900px;margin:auto;padding:20px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height:1.6;">
-  <h1 style="display:flex;align-items:center;gap:10px;">
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+<div style="max-width:1000px;margin:auto;padding:20px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height:1.6;">
+  <!-- Heading -->
+  <h1 style="display:flex;align-items:center;gap:10px;color:#182848;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="url(#grad1)" viewBox="0 0 16 16">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#4b6cb7"/>
+          <stop offset="100%" stop-color="#182848"/>
+        </linearGradient>
+      </defs>
       <path d="M5 3.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
-      <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zM1 2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v12a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2V2z"/>
+      <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
     </svg>
     {{ page.title }}
   </h1>
   <p style="color:#555;">{{ page.description }}</p>
-  <hr style="border:none;height:2px;background:linear-gradient(to right, #4b6cb7, #182848);margin:20px 0;">
+  <hr style="border:none;height:3px;background:linear-gradient(to right, #4b6cb7, #182848);margin:20px 0;border-radius:5px;">
 
-  {% assign year_key = page.year %}
-  {% assign papers = site.data.PYQS[year_key] %}
-
-  <h2 style="display:flex;align-items:center;gap:8px;">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:url(#linkGradient);">
-    <defs>
-      <linearGradient id="linkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#4b6cb7"/>
-        <stop offset="100%" stop-color="#182848"/>
-      </linearGradient>
-    </defs>
-    <path d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3z"/>
-    <path d="M5 5h5v2H6.414l9.293 9.293-1.414 1.414L5 6.414V5z"/>
-  </svg>
-  आधिकारिक स्रोत
-</h2>
+  <!-- Official Source -->
+  <h2 style="display:flex;align-items:center;gap:8px;color:#4b6cb7;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="url(#grad1)" viewBox="0 0 24 24">
+      <path d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3z"/>
+      <path d="M5 5h5v2H6.414l9.293 9.293-1.414 1.414L5 6.414V5z"/>
+    </svg>
+    आधिकारिक स्रोत
+  </h2>
   <ul style="list-style:none;padding-left:0;">
     <li><a href="https://upsc.gov.in/examinations/previous-question-papers" target="_blank">UPSC आधिकारिक वेबसाइट</a></li>
   </ul>
 
+  <!-- Utility Table Style -->
+  <style>
+    .paper-table {
+      width:100%;
+      border-collapse:collapse;
+      margin:20px 0;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      border-radius:12px;
+      overflow:hidden;
+    }
+    .paper-table th {
+      background:linear-gradient(to right,#4b6cb7,#182848);
+      color:white;
+      text-align:left;
+      padding:12px;
+      font-size:16px;
+    }
+    .paper-table td {
+      padding:12px;
+      border-bottom:1px solid #eee;
+    }
+    .paper-table tr:hover {
+      background:#f9f9ff;
+    }
+    .download-icon {
+      vertical-align:middle;
+      margin-right:6px;
+    }
+  </style>
+
   <!-- Prelims -->
-  <h2 style="margin-top:30px;">प्रारंभिक परीक्षा (Prelims)</h2>
+  <h2 style="margin-top:40px;color:#182848;">📘 प्रारंभिक परीक्षा (Prelims)</h2>
   {% if papers.prelims %}
-    <ul style="list-style:none;padding-left:0;">
-      <li style="margin-bottom:10px;">
-        <strong>सामान्य अध्ययन पेपर-I</strong>
-        <ul>
-          {% if papers.prelims.gs1 %}
+    <table class="paper-table">
+      <tr>
+        <th>पेपर</th>
+        <th>डाउनलोड लिंक</th>
+      </tr>
+      {% if papers.prelims.gs1 %}
+        <tr>
+          <td><b>सामान्य अध्ययन पेपर-I</b></td>
+          <td>
             {% for link in papers.prelims.gs1 %}
               {% if link != "" %}
-                <li style="margin:5px 0;">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+                <a href="{{ link }}" target="_blank">
+                  <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" viewBox="0 0 16 16">
                     <path d="M8 5v5.5l3-3-1.5-1.5L8 5z"/>
                     <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6.5L14 4.5z"/>
                   </svg>
-                  <a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a>
-                </li>
-              {% else %}
-                <li><i>Coming Soon...</i></li>
+                  Link {{ forloop.index }}
+                </a><br>
               {% endif %}
             {% endfor %}
-          {% else %}
-            <li><i>Coming Soon...</i></li>
-          {% endif %}
-        </ul>
-      </li>
-      <li style="margin-bottom:10px;">
-        <strong>CSAT (Paper-II)</strong>
-        <ul>
-          {% if papers.prelims.csat %}
+          </td>
+        </tr>
+      {% endif %}
+      {% if papers.prelims.csat %}
+        <tr>
+          <td><b>CSAT (Paper-II)</b></td>
+          <td>
             {% for link in papers.prelims.csat %}
               {% if link != "" %}
-                <li style="margin:5px 0;">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+                <a href="{{ link }}" target="_blank">
+                  <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" viewBox="0 0 16 16">
                     <path d="M8 5v5.5l3-3-1.5-1.5L8 5z"/>
                     <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6.5L14 4.5z"/>
                   </svg>
-                  <a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a>
-                </li>
-              {% else %}
-                <li><i>Coming Soon...</i></li>
+                  Link {{ forloop.index }}
+                </a><br>
               {% endif %}
             {% endfor %}
-          {% else %}
-            <li><i>Coming Soon...</i></li>
-          {% endif %}
-        </ul>
-      </li>
-    </ul>
-  {% else %}
-    <p><i>Coming Soon...</i></p>
+          </td>
+        </tr>
+      {% endif %}
+    </table>
   {% endif %}
 
   <!-- Mains -->
-  <h2 style="margin-top:30px;"><b>मुख्य परीक्षा (Mains)</b></h2>
+  <h2 style="margin-top:40px;color:#182848;">📕 मुख्य परीक्षा (Mains)</h2>
   {% if papers.mains %}
-    <ul style="list-style:none;padding-left:0;">
-      <!-- Essay -->
+    <table class="paper-table">
+      <tr>
+        <th>पेपर</th>
+        <th>डाउनलोड लिंक</th>
+      </tr>
+
       {% if papers.mains.essay %}
-        <li style="margin-bottom:10px;"><strong>निबंध (ESSAY)</strong>
-          <ul>
+        <tr>
+          <td><b>निबंध (ESSAY)</b></td>
+          <td>
             {% for link in papers.mains.essay %}
               {% if link != "" %}
-                <li style="margin:5px 0;">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
-                    <path d="M8 5v5.5l3-3-1.5-1.5L8 5z"/>
-                    <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6.5L14 4.5z"/>
-                  </svg>
-                  <a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a>
-                </li>
-              {% else %}
-                <li><i>Coming Soon...</i></li>
+                <a href="{{ link }}" target="_blank">📝 Link {{ forloop.index }}</a><br>
               {% endif %}
             {% endfor %}
-          </ul>
-        </li>
+          </td>
+        </tr>
       {% endif %}
 
-      <!-- GS Papers -->
       {% assign gs_keys = "gs1,gs2,gs3,gs4" | split: "," %}
       {% for key in gs_keys %}
         {% if papers.mains[key] %}
-          <li style="margin-bottom:10px;"><strong>{{ key | replace: "gs", "GENERAL STUDIES PAPER " | upcase }}</strong>
-            <ul>
+          <tr>
+            <td><b>{{ key | replace: "gs", "GENERAL STUDIES PAPER " | upcase }}</b></td>
+            <td>
               {% for link in papers.mains[key] %}
                 {% if link != "" %}
-                  <li style="margin:5px 0;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff6600" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
-                      <path d="M8 5v5.5l3-3-1.5-1.5L8 5z"/>
-                      <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6.5L14 4.5z"/>
-                    </svg>
-                    <a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a>
-                  </li>
-                {% else %}
-                  <li><i>Coming Soon...</i></li>
+                  <a href="{{ link }}" target="_blank">📘 Link {{ forloop.index }}</a><br>
                 {% endif %}
               {% endfor %}
-            </ul>
-          </li>
+            </td>
+          </tr>
         {% endif %}
       {% endfor %}
+    </table>
 
-      <!-- Optional Subjects -->
-      <h4 style="margin-top:20px;color:#d9ff00;">OPTIONAL SUBJECTS</h4>
-      {% if papers.mains.optional %}
-        {% for subj_key in papers.mains.optional %}
-          <li style="margin-bottom:10px;"><strong>{{ subj_key[0] | replace: "_", " " | upcase }}</strong>
-            <ul>
+    <!-- Compulsory Subjects -->
+    <h3 style="margin-top:30px;color:#4b6cb7;">📖 COMPULSORY SUBJECTS</h3>
+    <table class="paper-table">
+      <tr>
+        <th>विषय</th>
+        <th>डाउनलोड लिंक</th>
+      </tr>
+      {% if papers.mains.compulsory %}
+        {% for subj_key in papers.mains.compulsory %}
+          <tr>
+            <td><b>{{ subj_key[0] | replace:"_"," " | upcase }}</b></td>
+            <td>
               {% for link in subj_key[1] %}
                 {% if link != "" %}
-                  <li style="margin:5px 0;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4b6cb7" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
-                      <path d="M8 5v5.5l3-3-1.5-1.5L8 5z"/>
-                      <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6.5L14 4.5z"/>
-                    </svg>
-                    <a href="{{ link }}" target="_blank">Download Link {{ forloop.index }}</a>
-                  </li>
-                {% else %}
-                  <li><i>Coming Soon...</i></li>
+                  <a href="{{ link }}" target="_blank">📄 Link {{ forloop.index }}</a><br>
                 {% endif %}
               {% endfor %}
-            </ul>
-          </li>
+            </td>
+          </tr>
         {% endfor %}
+      {% else %}
+        <tr><td colspan="2"><i>Coming Soon...</i></td></tr>
       {% endif %}
+    </table>
 
-    </ul>
-  {% else %}
-    <p><i>Coming Soon...</i></p>
+    <!-- Optional Subjects -->
+    <h3 style="margin-top:30px;color:#4b6cb7;">📚 OPTIONAL SUBJECTS</h3>
+    <table class="paper-table">
+      <tr>
+        <th>विषय</th>
+        <th>डाउनलोड लिंक</th>
+      </tr>
+      {% if papers.mains.optional %}
+        {% for subj_key in papers.mains.optional %}
+          <tr>
+            <td><b>{{ subj_key[0] | replace:"_"," " | upcase }}</b></td>
+            <td>
+              {% for link in subj_key[1] %}
+                {% if link != "" %}
+                  <a href="{{ link }}" target="_blank">📄 Link {{ forloop.index }}</a><br>
+                {% endif %}
+              {% endfor %}
+            </td>
+          </tr>
+        {% endfor %}
+      {% else %}
+        <tr><td colspan="2"><i>Coming Soon...</i></td></tr>
+      {% endif %}
+    </table>
+
+    <!-- Literature Subjects -->
+    <h3 style="margin-top:30px;color:#4b6cb7;">📔 LITERATURE SUBJECTS</h3>
+    <table class="paper-table">
+      <tr>
+        <th>विषय</th>
+        <th>डाउनलोड लिंक</th>
+      </tr>
+      {% if papers.mains.literature %}
+        {% for subj_key in papers.mains.literature %}
+          <tr>
+            <td><b>{{ subj_key[0] | replace:"_"," " | upcase }}</b></td>
+            <td>
+              {% for link in subj_key[1] %}
+                {% if link != "" %}
+                  <a href="{{ link }}" target="_blank">📄 Link {{ forloop.index }}</a><br>
+                {% endif %}
+              {% endfor %}
+            </td>
+          </tr>
+        {% endfor %}
+      {% else %}
+        <tr><td colspan="2"><i>Coming Soon...</i></td></tr>
+      {% endif %}
+    </table>
   {% endif %}
 </div>
