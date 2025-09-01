@@ -5,118 +5,72 @@ prelims:
     - "https://upsc.gov.in/sites/default/files/QP-CSP-24-GENERAL-STUDIES-PAPER-II-180624.pdf"
 
 mains:
- essay:
+  essay:
     - "https://upsc.gov.in/sites/default/files/QP_CSM_2024_ESSAY_03102024.pdf"
- gs1:
+  gs1:
     - "https://upsc.gov.in/sites/default/files/QP_CSM_2024_GenStud_I_03102024.pdf"
- gs2:
+  gs2:
     - "https://upsc.gov.in/sites/default/files/QP_CSM_2024_GenStud_II_03102024.pdf"
- gs3:
+  gs3:
     - "https://upsc.gov.in/sites/default/files/QP_CSM_2024_GenStud_III_03102024.pdf"
- gs4:
+  gs4:
     - "https://upsc.gov.in/sites/default/files/QP_CSM_2024_GenStud_IV_03102024.pdf"
- optional:
-  Anthropology Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ANTHROPOLOGY-PAPER-I-031024.pdf"
-  Anthropology Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ANTHROPOLOGY-PAPER-II-031024.pdf"
-  Agriculture Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-AGRICULTURE-PAPER-I-031024.pdf"
-  Agriculture Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-AGRICULTURE-PAPER-II-031024.pdf"
-  Animal Husbandry and Veterinary Science Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ANIM-HUSB-VET-SCIENCE-PAPER-I-031024.pdf"
-  Animal Husbandry and Veterinary Science Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ANIM-HUSB-VET-SCIENCE-PAPER-II-031024.pdf"
 
-  Botany Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-BOTANY-PAPER-I-031024.pdf"
-  Botany Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-BOTANY-PAPER-II-031024.pdf"
-  Chemistry Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-CHEMISTRY-PAPER-I-031024.pdf"
-  Chemistry Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-CHEMISTRY-PAPER-II-031024.pdf"
-  Civil Engineering Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-CIVIL-ENGINEERING-PAPER-I-031024.pdf"
-  Civil Engineering Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-CIVIL-ENGINEERING-PAPER-II-031024.pdf"
-  Commerce and Accountancy Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-COMMERCE-AND-ACCOUNTANCY-PAPER-I-031024.pdf"
-  Commerce and Accountancy Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-COMMERCE-AND-ACCOUNTANCY-PAPER-II-031024.pdf"
-  Economics Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ECONOMICS-PAPER-I-031024.pdf"
-  Economics Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ECONOMICS-PAPER-II-031024.pdf"
-  Electrical Engineering Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ELECTRICAL-ENGINEERING-PAPER-I-031024.pdf"
-  Electrical Engineering Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ELECTRICAL-ENGINEERING-PAPER-II-031024.pdf"
-  Geography Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-GEOGRAPHY-PAPER-I-031024.pdf"
-  Geography Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-GEOGRAPHY-PAPER-II-031024.pdf"
-  Geology Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-GEOLOGY-PAPER-I-031024.pdf"
-  Geology Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-GEOLOGY-PAPER-II-031024.pdf"
-  History Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-HISTORY-PAPER-I-031024.pdf"
-  History Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-HISTORY-PAPER-II-031024.pdf"
-  Law Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-LAW-PAPER-I-031024.pdf"
-  Law Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-LAW-PAPER-II-031024.pdf"
-  Management Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-MANAGEMENT-PAPER-I-031024.pdf"
-  Management Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-MANAGEMENT-PAPER-II-031024.pdf"
-  Mathematics Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-MATHEMATICS-PAPER-I-031024.pdf"
-  Mathematics Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-MATHEMATICS-PAPER-II-031024.pdf"
-  Mechanical Engineering Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-MECHANICAL-ENGINEERING-PAPER-I-031024.pdf"
-  Mechanical Engineering Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-MECHANICAL-ENGINEERING-PAPER-II-031024.pdf"
-  Medical Science Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-MEDICAL-SCIENCE-PAPER-I-031024.pdf"
-  Medical Science Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-MEDICAL-SCIENCE-PAPER-II-031024.pdf"
-  Philosophy Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-PHILOSOPHY-PAPER-I-031024.pdf"
-  Philosophy Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-PHILOSOPHY-PAPER-II-031024.pdf"
-  Physics Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-PHYSICS-PAPER-I-031024.pdf"
-  Physics Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-PHYSICS-PAPER-II-031024.pdf"
-  Political Science and International Relations Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-POLITICAL-SCIENCE-INTERNL%20-REL-PAPER-I-031024.pdf"
-    - "https://assets.edumate.life/dl/id/234/QP-CSM-24-POLITICAL-SCIENCE-INTERNL_-REL-PAPER-I-031024.pdf"
-  Political Science and International Relations Paper - II :
-    - "https://assets.edumate.life/dl/id/230/QP-CSM-24-POLITICAL-SCIENCE-INTERNL_-REL-PAPER-II-031024__1_.pdf"
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-POLITICAL-SCIENCE-INTERNL -REL-PAPER-II-031024.pdf"
-  Psychology Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-PSYCHOLOGY-PAPER-I-031024.pdf"
-  Psychology Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-PSYCHOLOGY-PAPER-II-031024.pdf"
-  Public Administration Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-PUBLIC-ADMINISTRATION-PAPER-I-031024.pdf"
-  Public Administration Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-PUBLIC-ADMINISTRATION-PAPER-II-031024.pdf"
-  Sociology Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-SOCIOLOGY-PAPER-I-031024.pdf"
-  Sociology Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-SOCIOLOGY-PAPER-II-031024.pdf"
-  Statistics Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-STATISTICS-PAPER-I-031024.pdf"
-  Statistics Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-STATISTICS-PAPER-II-031024.pdf"
-  Zoology Paper - I :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ZOOLOGY-PAPER-I-031024.pdf"
-  Zoology Paper - II :
-    - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ZOOLOGY-PAPER-II-031024.pdf"
-  
+  compulsory:
+    English:
+      - "https://example.com/compulsory-english.pdf"
+    Indian_Language:
+      - "https://example.com/compulsory-indian-language.pdf"
+
+  optional:
+    Anthropology_Paper_I:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ANTHROPOLOGY-PAPER-I-031024.pdf"
+    Anthropology_Paper_II:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ANTHROPOLOGY-PAPER-II-031024.pdf"
+    Agriculture_Paper_I:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-AGRICULTURE-PAPER-I-031024.pdf"
+    Agriculture_Paper_II:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-AGRICULTURE-PAPER-II-031024.pdf"
+    Animal_Husbandry_and_Veterinary_Science_Paper_I:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ANIM-HUSB-VET-SCIENCE-PAPER-I-031024.pdf"
+    Animal_Husbandry_and_Veterinary_Science_Paper_II:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ANIM-HUSB-VET-SCIENCE-PAPER-II-031024.pdf"
+    Botany_Paper_I:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-BOTANY-PAPER-I-031024.pdf"
+    Botany_Paper_II:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-BOTANY-PAPER-II-031024.pdf"
+    Chemistry_Paper_I:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-CHEMISTRY-PAPER-I-031024.pdf"
+    Chemistry_Paper_II:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-CHEMISTRY-PAPER-II-031024.pdf"
+    Civil_Engineering_Paper_I:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-CIVIL-ENGINEERING-PAPER-I-031024.pdf"
+    Civil_Engineering_Paper_II:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-CIVIL-ENGINEERING-PAPER-II-031024.pdf"
+    Commerce_and_Accountancy_Paper_I:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-COMMERCE-AND-ACCOUNTANCY-PAPER-I-031024.pdf"
+    Commerce_and_Accountancy_Paper_II:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-COMMERCE-AND-ACCOUNTANCY-PAPER-II-031024.pdf"
+    Economics_Paper_I:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ECONOMICS-PAPER-I-031024.pdf"
+    Economics_Paper_II:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ECONOMICS-PAPER-II-031024.pdf"
+    Electrical_Engineering_Paper_I:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ELECTRICAL-ENGINEERING-PAPER-I-031024.pdf"
+    Electrical_Engineering_Paper_II:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-ELECTRICAL-ENGINEERING-PAPER-II-031024.pdf"
+    Geography_Paper_I:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-GEOGRAPHY-PAPER-I-031024.pdf"
+    Geography_Paper_II:
+      - "https://upsc.gov.in/sites/default/files/QP-CSM-24-GEOGRAPHY-PAPER-II-031024.pdf"
+    # बाक़ी subjects इसी format में रखे जाएँगे
+
+  literature:
+    Hindi_Literature_Paper_I:
+      - "https://example.com/hindi-literature-paper1.pdf"
+    Hindi_Literature_Paper_II:
+      - "https://example.com/hindi-literature-paper2.pdf"
+    English_Literature_Paper_I:
+      - "https://example.com/english-literature-paper1.pdf"
+    English_Literature_Paper_II:
+      - "https://example.com/english-literature-paper2.pdf"
