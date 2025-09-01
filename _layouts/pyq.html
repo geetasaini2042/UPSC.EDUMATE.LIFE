@@ -3,48 +3,40 @@ layout: default
 ---
 
 <div style="max-width:1000px;margin:auto;padding:20px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height:1.6;">
-  <!-- Heading -->
+
   <h1 style="color:#182848;">{{ page.title }}</h1>
   <p style="color:#555;">{{ page.description }}</p>
-  <hr style="border:none;height:3px;background:linear-gradient(to right, #4b6cb7, #182848);margin:20px 0;border-radius:5px;">
+  <hr style="border:none;height:3px;background:linear-gradient(to right,#4b6cb7,#182848);margin:20px 0;border-radius:5px;">
 
   {% assign year = page.year %}
   {% assign papers = site.data.upsc[year] %}
 
   <!-- Prelims -->
-  <h2 style="color:#182848;">📘 Prelims</h2>
+  <h2 style="margin-top:40px;color:#182848;">📘 Prelims</h2>
   <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
-    <tr style="background:#4b6cb7;color:white;">
+    <tr>
       <th>Subject</th>
       <th>Paper 1</th>
       <th>Paper 2</th>
     </tr>
     {% if papers.prelims %}
       <tr>
-        <td>GS Paper-I</td>
+        <td><b>GS Paper-I</b></td>
         <td>
-          {% if papers.prelims.gs1 %}
-            {% for link in papers.prelims.gs1 %}
-              {% if link != "" %}
-                <a href="{{ link }}" target="_blank">Download</a>
-              {% endif %}
-            {% endfor %}
-          {% endif %}
+          {% if papers.prelims.gs1[0] and papers.prelims.gs1[0] != "" %}
+            <a href="{{ papers.prelims.gs1[0] }}" target="_blank">Download</a>
+          {% else %}-{% endif %}
         </td>
-        <td>—</td>
+        <td>-</td>
       </tr>
       <tr>
-        <td>CSAT Paper-II</td>
-        <td>—</td>
+        <td><b>CSAT Paper-II</b></td>
         <td>
-          {% if papers.prelims.csat %}
-            {% for link in papers.prelims.csat %}
-              {% if link != "" %}
-                <a href="{{ link }}" target="_blank">Download</a>
-              {% endif %}
-            {% endfor %}
-          {% endif %}
+          {% if papers.prelims.csat[0] and papers.prelims.csat[0] != "" %}
+            <a href="{{ papers.prelims.csat[0] }}" target="_blank">Download</a>
+          {% else %}-{% endif %}
         </td>
+        <td>-</td>
       </tr>
     {% endif %}
   </table>
@@ -54,93 +46,102 @@ layout: default
 
   <!-- Essay -->
   <h3>✍️ Essay</h3>
-  {% if papers.mains.essay %}
-    {% for link in papers.mains.essay %}
-      {% if link != "" %}
-        <a href="{{ link }}" target="_blank">Download</a><br>
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-
-  <!-- Compulsory Subjects -->
-  <h3>📖 Compulsory Subjects</h3>
   <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
-    <tr style="background:#4b6cb7;color:white;">
+    <tr>
       <th>Subject</th>
       <th>Paper 1</th>
       <th>Paper 2</th>
     </tr>
-    {% if papers.mains.compulsory %}
-      {% for subj_name in papers.mains.compulsory %}
-        <tr>
-          <td>{{ subj_name[0] | replace:"_"," " | capitalize }}</td>
-          <td>
-            {% if subj_name[1][0] != "" %}
-              <a href="{{ subj_name[1][0] }}" target="_blank">Download</a>
-            {% endif %}
-          </td>
-          <td>
-            {% if subj_name[1][1] != "" %}
-              <a href="{{ subj_name[1][1] }}" target="_blank">Download</a>
-            {% endif %}
-          </td>
-        </tr>
-      {% endfor %}
-    {% endif %}
+    <tr>
+      <td><b>Essay</b></td>
+      <td>
+        {% if papers.mains.essay[0] and papers.mains.essay[0] != "" %}
+          <a href="{{ papers.mains.essay[0] }}" target="_blank">Download</a>
+        {% else %}-{% endif %}
+      </td>
+      <td>-</td>
+    </tr>
+  </table>
+
+  <!-- Compulsory Subjects -->
+  <h3 style="margin-top:30px;color:#4b6cb7;">📖 Compulsory Subjects</h3>
+  <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
+    <tr>
+      <th>Subject</th>
+      <th>Paper 1</th>
+      <th>Paper 2</th>
+    </tr>
+    {% for subj in papers.mains.compulsory %}
+      {% assign subject_name = subj[0] %}
+      {% assign links = subj[1] %}
+      <tr>
+        <td><b>{{ subject_name | replace:"_"," " | upcase }}</b></td>
+        <td>
+          {% if links[0] and links[0] != "" %}
+            <a href="{{ links[0] }}" target="_blank">Download</a>
+          {% else %}-{% endif %}
+        </td>
+        <td>
+          {% if links[1] and links[1] != "" %}
+            <a href="{{ links[1] }}" target="_blank">Download</a>
+          {% else %}-{% endif %}
+        </td>
+      </tr>
+    {% endfor %}
   </table>
 
   <!-- Optional Subjects -->
-  <h3>📘 Optional Subjects</h3>
+  <h3 style="margin-top:30px;color:#4b6cb7;">📘 Optional Subjects</h3>
   <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
-    <tr style="background:#4b6cb7;color:white;">
+    <tr>
       <th>Subject</th>
       <th>Paper 1</th>
       <th>Paper 2</th>
     </tr>
-    {% if papers.mains.optional %}
-      {% for subj_name in papers.mains.optional %}
-        <tr>
-          <td>{{ subj_name[0] | replace:"_"," " | capitalize }}</td>
-          <td>
-            {% if subj_name[1][0] != "" %}
-              <a href="{{ subj_name[1][0] }}" target="_blank">Download</a>
-            {% endif %}
-          </td>
-          <td>
-            {% if subj_name[1][1] != "" %}
-              <a href="{{ subj_name[1][1] }}" target="_blank">Download</a>
-            {% endif %}
-          </td>
-        </tr>
-      {% endfor %}
-    {% endif %}
+    {% for subj in papers.mains.optional %}
+      {% assign subject_name = subj[0] %}
+      {% assign links = subj[1] %}
+      <tr>
+        <td><b>{{ subject_name | replace:"_"," " | upcase }}</b></td>
+        <td>
+          {% if links[0] and links[0] != "" %}
+            <a href="{{ links[0] }}" target="_blank">Download</a>
+          {% else %}-{% endif %}
+        </td>
+        <td>
+          {% if links[1] and links[1] != "" %}
+            <a href="{{ links[1] }}" target="_blank">Download</a>
+          {% else %}-{% endif %}
+        </td>
+      </tr>
+    {% endfor %}
   </table>
 
   <!-- Literature Subjects -->
-  <h3>📕 Literature Subjects</h3>
+  <h3 style="margin-top:30px;color:#4b6cb7;">📕 Literature Subjects</h3>
   <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
-    <tr style="background:#4b6cb7;color:white;">
-      <th>Language</th>
+    <tr>
+      <th>Subject</th>
       <th>Paper 1</th>
       <th>Paper 2</th>
     </tr>
-    {% if papers.mains.literature %}
-      {% for subj_name in papers.mains.literature %}
-        <tr>
-          <td>{{ subj_name[0] | replace:"_"," " | capitalize }}</td>
-          <td>
-            {% if subj_name[1][0] != "" %}
-              <a href="{{ subj_name[1][0] }}" target="_blank">Download</a>
-            {% endif %}
-          </td>
-          <td>
-            {% if subj_name[1][1] != "" %}
-              <a href="{{ subj_name[1][1] }}" target="_blank">Download</a>
-            {% endif %}
-          </td>
-        </tr>
-      {% endfor %}
-    {% endif %}
+    {% for subj in papers.mains.literature %}
+      {% assign subject_name = subj[0] %}
+      {% assign links = subj[1] %}
+      <tr>
+        <td><b>{{ subject_name | replace:"_"," " | upcase }}</b></td>
+        <td>
+          {% if links[0] and links[0] != "" %}
+            <a href="{{ links[0] }}" target="_blank">Download</a>
+          {% else %}-{% endif %}
+        </td>
+        <td>
+          {% if links[1] and links[1] != "" %}
+            <a href="{{ links[1] }}" target="_blank">Download</a>
+          {% else %}-{% endif %}
+        </td>
+      </tr>
+    {% endfor %}
   </table>
 
 </div>
