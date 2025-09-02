@@ -12,7 +12,7 @@ layout: default
   {% assign papers = site.data.upsc[year] %}
 
   <!-- Prelims -->
-  <h2 style="margin-top:40px;color:#00ed5f;">📘 PRELIMS</h2>
+  <h2 style="margin-top:40px;color:#00ed5f;"><b>📘 PRELIMS</b></h2>
   <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
     <tr>
       <th>Subject</th>
@@ -39,7 +39,7 @@ layout: default
   </table>
 
   <!-- Mains -->
-  <h2 style="margin-top:40px;color:#00ed5f;">📕 MAINS</h2>
+  <h2 style="margin-top:40px;color:#00ed5f;"><b>📕 MAINS</b></h2>
 
   <!-- Essay -->
   <h3><b>✍️ Essay</b></h3>
@@ -62,9 +62,8 @@ layout: default
   <h3 style="margin-top:30px;"><b>📖 COMPULSORY SUBJECTS</b></h3>
   <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
     <tr>
-      <th>Subject</th>
-      <th>Paper 1</th>
-      <th>Paper 2</th>
+      <th>SUBJECT</th>
+      <th>DOWNLOAD LINK</th>
     </tr>
     {% for subj in papers.mains.compulsory %}
       {% assign subject_name = subj[0] %}
@@ -74,11 +73,6 @@ layout: default
         <td>
           {% if links[0] and links[0] != "" %}
             <a href="{{ links[0] }}" target="_blank">Download</a>
-          {% else %}-{% endif %}
-        </td>
-        <td>
-          {% if links[1] and links[1] != "" %}
-            <a href="{{ links[1] }}" target="_blank">Download</a>
           {% else %}-{% endif %}
         </td>
       </tr>
