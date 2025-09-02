@@ -34,5 +34,9 @@ mains:
     - [Geography, ["https://upsc.gov.in/sites/default/files/QP-CSM-24-GEOGRAPHY-PAPER-I-031024.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-24-GEOGRAPHY-PAPER-II-031024.pdf"]]
 
   literature:
-    - [Hindi, ["https://example.com/hindi-literature-paper1.pdf", "https://example.com/hindi-literature-paper2.pdf"]]
-    - [English, ["https://example.com/english-literature-paper1.pdf", "https://example.com/english-literature-paper2.pdf"]]
+    - [Assamese Literature, ["https://upsc.gov.in/sites/default/files/QP_CSM_2024_Assa_P_I_Lite_03102024.pdf", "https://upsc.gov.in/sites/default/files/QP_CSM_2024_Assa_P_II_Lite_03102024.pdf"]]
+    - [Bengali Literature, ["https://upsc.gov.in/sites/default/files/QP_CSM_2024_Beng_P_I_Lite_03102024.pdf", "https://upsc.gov.in/sites/default/files/QP_CSM_2024_Beng_P_II_Lite_03102024.pdf"]]
+    - [English Literature, ["https://upsc.gov.in/sites/default/files/QP_CSM_2024_Eng_P_I_Lite_03102024.pdf", "https://upsc.gov.in/sites/default/files/QP_CSM_2024_Eng_P_II_Lite_03102024.pdf"]]
+    - [Gujarati Literature, ["https://upsc.gov.in/sites/default/files/QP_CSM_2024_Guj_P_I_Lite_03102024.pdf", "https://upsc.gov.in/sites/default/files/QP_CSM_2024_Guj_P_II_Lite_03102024.pdf"]]
+    - [Hindi Literature, ["https://upsc.gov.in/sites/default/files/QP_CSM_2024_Hn_P_I_Lite_03102024.pdf", "https://upsc.gov.in/sites/default/files/QP_CSM_2024_Hn_P_II_Lite_03102024.pdf"]]
+    #- [English, ["https://example.com/english-literature-paper1.pdf", "https://example.com/english-literature-paper2.pdf"]]
