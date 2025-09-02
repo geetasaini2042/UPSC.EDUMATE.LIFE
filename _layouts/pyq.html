@@ -42,21 +42,53 @@ layout: default
   <h2 style="margin-top:40px;color:#00ed5f;"><b>📕 MAINS</b></h2>
 
   <!-- Essay -->
-  <h3><b>✍️ Essay</b></h3>
+  <h3><b>✍ GENERAL PAPERS</b></h3>
   <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
-    <tr>
-      <th>Subject</th>
-      <th>DOWNLOAD LINK</th>
-    </tr>
-    <tr>
-      <td><b>Essay</b></td>
-      <td>
-        {% if papers.mains.essay[0] and papers.mains.essay[0] != "" %}
-          <a href="{{ papers.mains.essay[0] }}" target="_blank">Download</a>
-        {% else %}-{% endif %}
-      </td>
-    </tr>
-  </table>
+  <tr>
+    <th>Subject</th>
+    <th>DOWNLOAD LINK</th>
+  </tr>
+  <tr>
+    <td><b>Essay</b></td>
+    <td>
+      {% if papers.mains.essay[0] and papers.mains.essay[0] != "" %}
+        <a href="{{ papers.mains.essay[0] }}" target="_blank">Download</a>
+      {% else %}-{% endif %}
+    </td>
+  </tr>
+  <tr>
+    <td><b>General Studies Paper I</b></td>
+    <td>
+      {% if papers.mains.gs1[0] and papers.mains.gs1[0] != "" %}
+        <a href="{{ papers.mains.gs1[0] }}" target="_blank">Download</a>
+      {% else %}-{% endif %}
+    </td>
+  </tr>
+  <tr>
+    <td><b>General Studies Paper II</b></td>
+    <td>
+      {% if papers.mains.gs2[0] and papers.mains.gs2[0] != "" %}
+        <a href="{{ papers.mains.gs2[0] }}" target="_blank">Download</a>
+      {% else %}-{% endif %}
+    </td>
+  </tr>
+  <tr>
+    <td><b>General Studies Paper III</b></td>
+    <td>
+      {% if papers.mains.gs3[0] and papers.mains.gs3[0] != "" %}
+        <a href="{{ papers.mains.gs3[0] }}" target="_blank">Download</a>
+      {% else %}-{% endif %}
+    </td>
+  </tr>
+  <tr>
+    <td><b>General Studies Paper IV</b></td>
+    <td>
+      {% if papers.mains.gs4[0] and papers.mains.gs4[0] != "" %}
+        <a href="{{ papers.mains.gs4[0] }}" target="_blank">Download</a>
+      {% else %}-{% endif %}
+    </td>
+  </tr>
+</table>
 
   <!-- Compulsory Subjects -->
   <h3 style="margin-top:30px;"><b>📖 COMPULSORY SUBJECTS</b></h3>
