@@ -16,8 +16,7 @@ layout: default
   <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
     <tr>
       <th>Subject</th>
-      <th>Paper 1</th>
-      <th>Paper 2</th>
+      <th>DOWNLOAD LINK</th>
     </tr>
     {% if papers.prelims %}
       <tr>
@@ -27,7 +26,6 @@ layout: default
             <a href="{{ papers.prelims.gs1[0] }}" target="_blank">Download</a>
           {% else %}-{% endif %}
         </td>
-        <td>-</td>
       </tr>
       <tr>
         <td><b>CSAT Paper-II</b></td>
@@ -36,7 +34,6 @@ layout: default
             <a href="{{ papers.prelims.csat[0] }}" target="_blank">Download</a>
           {% else %}-{% endif %}
         </td>
-        <td>-</td>
       </tr>
     {% endif %}
   </table>
@@ -49,8 +46,7 @@ layout: default
   <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
     <tr>
       <th>Subject</th>
-      <th>Paper 1</th>
-      <th>Paper 2</th>
+      <th>DOWNLOAD LINK</th>
     </tr>
     <tr>
       <td><b>Essay</b></td>
@@ -59,7 +55,6 @@ layout: default
           <a href="{{ papers.mains.essay[0] }}" target="_blank">Download</a>
         {% else %}-{% endif %}
       </td>
-      <td>-</td>
     </tr>
   </table>
 
