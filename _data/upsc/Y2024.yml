@@ -18,9 +18,24 @@ mains:
     - "https://upsc.gov.in/sites/default/files/QP_CSM_2024_GenStud_IV_03102024.pdf"
 
   compulsory:
-    - [English, ["https://example.com/compulsory-english-paper1.pdf", "https://example.com/compulsory-english-paper2.pdf"]]
-    - [Indian_Language, ["https://example.com/compulsory-indian-language-paper1.pdf", "https://example.com/compulsory-indian-language-paper2.pdf"]]
-
+    - [Assamese Compulsory,["https://upsc.gov.in/sites/default/files/QP_CSM_2024_Assa_Comp_03102024.pdf"]]
+    - [Bengali Compulsory, ["https://upsc.gov.in/sites/default/files/QP_CSM_2024_Beng_Comp_03102024.pdf"]
+    - [Bodo Compulsory, ["https://upsc.gov.in/sites/default/files/QP_CSM_2024_Bodo_Comp_03102024.pdf"]
+    - [English Compulsory, ["https://upsc.gov.in/sites/default/files/QP_CSM_2024_Eng_Comp_03102024.pdf"]
+    - [Gujarati Compulsory, ["https://upsc.gov.in/sites/default/files/QP_CSM_2024_Guj_Comp_03102024.pdf"]
+    - [Hindi Compulsory, ["https://upsc.gov.in/sites/default/files/QP_CSM_2024_Hn_Comp_03102024.pdf"]
+    - [Kannada Compulsory, ["https://upsc.gov.in/sites/default/files/QP_CSM_2024_Kann_Comp_03102024.pdf"]
+    - [Maithili Compulsory, ["https://upsc.gov.in/sites/default/files/QP_CSM_2024_Mait_Comp_03102024.pdf"]
+    - [Malayalam Compulsory, ["https://upsc.gov.in/sites/default/files/QP_CSM_2024_Mala_Comp_03102024.pdf"]
+    - [Marathi Compulsory, ["https://upsc.gov.in/sites/default/files/QP_CSM_2024_Mara_Comp_03102024.pdf"]
+    - [Nepali Compulsory, [""]
+    - [Odia Compulsory, [""]
+    - [Punjabi Compulsory, [""]
+    - [Sanskrit Compulsory, [""]
+    - [Sindhi Compulsory, [""] 
+    - [Tamil Compulsory, [""]
+    - [Telugu Compulsory, [""]
+    - [Urdu Compulsory, ["https://upsc.gov.in/sites/default/files/QP_CSM_2024_Urdu_Comp_03102024.pdf"]
   optional:
     - [Anthropology, ["https://upsc.gov.in/sites/default/files/QP-CSM-24-ANTHROPOLOGY-PAPER-I-031024.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-24-ANTHROPOLOGY-PAPER-II-031024.pdf"]]
     - [Agriculture, ["https://upsc.gov.in/sites/default/files/QP-CSM-24-AGRICULTURE-PAPER-I-031024.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-24-AGRICULTURE-PAPER-II-031024.pdf"]]
