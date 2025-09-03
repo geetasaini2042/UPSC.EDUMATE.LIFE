@@ -7,19 +7,18 @@ prelims:
 
 mains:
   essay:
-    - "https://upsc.gov.in/sites/default/files/QP_CSM_2024_ESSAY_03102024.pdf"
-    - "https://upsc.gov.in/sites/default/files/ESSAY-QP-CSM-25-010925.pdf"
+    - ""
   gs1:
-    - "https://upsc.gov.in/sites/default/files/QP_CSM_2024_GenStud_I_03102024.pdf"
+    - ""
   gs2:
-    - "https://upsc.gov.in/sites/default/files/QP_CSM_2024_GenStud_II_03102024.pdf"
+    - ""
   gs3:
-    - "https://upsc.gov.in/sites/default/files/QP_CSM_2024_GenStud_III_03102024.pdf"
+    - ""
   gs4:
-    - "https://upsc.gov.in/sites/default/files/QP_CSM_2024_GenStud_IV_03102024.pdf"
+    - ""
 
   compulsory:
-    - [Assamese Compulsory, ["https://upsc.gov.in/sites/default/files/ASSAMESE-COMPULSORY-QP-CSM-25-010925.pdf"]]
+    - [Assamese Compulsory, [""]]
     - [Bengali Compulsory, ["https://upsc.gov.in/sites/default/files/BENGALI-COMPULSORY-QP-CSM-25-010925.pdf"]]
     - [Bodo Compulsory, ["https://upsc.gov.in/sites/default/files/BODO-COMPULSORY-QP-CSM-25-010925.pdf"]]
     - [English Compulsory, ["https://upsc.gov.in/sites/default/files/ENGLISH-COMPULSORY-QP-CSM-25-010925.pdf"]]
