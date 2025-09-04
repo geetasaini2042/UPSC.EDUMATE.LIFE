@@ -119,6 +119,7 @@ tags: [NCERT SUMMARY, CLASS 6, CHAPTER 2, NOTES, NCERT NOTES]
 - **समाधि-वस्तुएँ (Burial Goods)**  
 - **शैलकला/गुफ़ा-चित्र (Rock Art)**  
 - **स्थायित्व (Sedentism)**
+
 ---
 
 ### 13) त्वरित तुलना: शिकार-संग्रह बनाम खेती-पशुपालन
