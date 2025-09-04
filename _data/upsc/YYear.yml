@@ -66,7 +66,7 @@ mains:
 
   literature:
     - [Assamese Literature, ["",""]]
-    - [Bengali Literature, ["", "]]
+    - [Bengali Literature, ["", ""]]
     - [English Literature, ["", ""]]
     - [Gujarati Literature, ["", ""]]
     - [Hindi Literature, ["", ""]]
@@ -77,8 +77,8 @@ mains:
     - [Marathi Literature Paper, ["", ""]]
     - [Odia Literature Paper, ["", ""]]
     - [Punjabi Literature, ["", ""]]
-    - [Sindhi Literature Paper, ["", "   "]]
+    - [Sindhi Literature Paper, ["", ""]]
     - [Sanskrit Literature Paper, ["", ""]]
     - [Tamil Literature Paper, ["", ""]]
-    - [Telugu Literature Paper, ["", "    "]]
+    - [Telugu Literature Paper, ["", ""]]
     - [Urdu Literature Paper, ["", ""]]
