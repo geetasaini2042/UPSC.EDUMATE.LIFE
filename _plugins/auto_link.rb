@@ -5,7 +5,10 @@ module Jekyll
         if post.data['words']
           post.data['words'].each do |word|
             url = post.url
-            input = input.gsub(/\b#{word}\b/, "<a href='#{url}'>#{word}</a>")
+            regex = /\b#{Regexp.escape(word)}\b/
+            input = input.gsub(regex) do |match|
+              "<a href='#{url}'>#{match}</a>"
+            end
           end
         end
       end
