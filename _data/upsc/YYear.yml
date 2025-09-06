@@ -36,6 +36,7 @@ mains:
     - [Tamil Compulsory, [""]]
     - [Telugu Compulsory, [""]]
     - [Urdu Compulsory, [""]]
+    
   optional:
     - [Agriculture, ["", ""]]
     - [Animal_Husbandry_and_Veterinary_Science, ["", ""]]
