@@ -1,7 +1,6 @@
 prelims:
   gs1:
     - ""
-    - ""
   csat:
     - ""
 
@@ -65,7 +64,7 @@ mains:
     - [Zoology Paper, ["", ""]]
 
   literature:
-    - [Assamese Literature, ["",""]]
+    - [Assamese Literature, ["", ""]]
     - [Bengali Literature, ["", ""]]
     - [English Literature, ["", ""]]
     - [Gujarati Literature, ["", ""]]
