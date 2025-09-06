@@ -3,6 +3,7 @@ title: "मुग़ल वंश (Mughal Dynasty)"
 description: 
    मुग़ल वंश (Mughal Dynasty) — UPSC Notes
 categories: [NCERT SUMMARY, HISTORY, मुग़ल वंश, Mughal Dynasty]
+words: [मुग़ल वंश, मुग़ल-राज्य, ]
 tags: [NOTES, NCERT NOTES]
 ---
 
