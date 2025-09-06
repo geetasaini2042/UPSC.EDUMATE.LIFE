@@ -122,8 +122,8 @@ script_includes:
     </dialog>
   {% endif %}
 
-  <div class="content">
-    {{ content | auto_link: site.posts }}
+  <div class="post-content">
+   {{ content | auto_link: site.posts, page.url }}
   </div>
 
   <div class="post-tail-wrapper text-muted">
