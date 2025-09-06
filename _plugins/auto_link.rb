@@ -3,20 +3,25 @@ module Jekyll
     def auto_link(input, posts, current_post_url = nil)
       posts.each do |post|
         next unless post.data['words']
-
-        # उसी post में खुद का link न बने
-        next if post.url == current_post_url
+        next if post.url == current_post_url   # खुद के post में link मत लगाओ
 
         post.data['words'].each do |word|
           url = post.url
-
-          # regex: avoid replacing inside tags
-          regex = /(?<!["'>])\b#{Regexp.escape(word)}\b(?!["'<])/
-
           linked_once = false
+
+          # Regex: शब्द को match करो भले वो <em>, <strong>, <b>, <i> tag के अंदर हो
+          # लेकिन <a ...> tag के अंदर मत पकड़ो
+          regex = /
+            (?<!["'>])                # <a href=""> वगैरह के अंदर मत पकड़ो
+            (?:<[^>]+>)*              # optional HTML formatting tag (<em>, <strong> etc.)
+            \b#{Regexp.escape(word)}\b
+            (?:<\/[^>]+>)*            # closing formatting tag
+            (?!["'<])                 # <a> या attribute के बाद मत पकड़ो
+          /x
+
           input = input.gsub(regex) do |match|
             if linked_once
-              match  # बाद की बार replace मत करो
+              match
             else
               linked_once = true
               "<a href='#{url}'>#{match}</a>"
