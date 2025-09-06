@@ -6,8 +6,8 @@ module Jekyll
 
         post.data['words'].each do |word|
           url = post.url
-          # केवल plain शब्द को ही replace करो, लिंक के अंदर नहीं
-          regex = /(?<!href=['"])#{Regexp.escape(word)}(?!['"])/
+          # Avoid replacing inside <a> tags
+          regex = /(?<!["'>])\b#{Regexp.escape(word)}\b(?!["'<])/
 
           input = input.gsub(regex) do |match|
             "<a href='#{url}'>#{match}</a>"
