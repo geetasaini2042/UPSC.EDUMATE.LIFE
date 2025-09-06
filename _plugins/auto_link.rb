@@ -6,7 +6,8 @@ module Jekyll
 
         post.data['words'].each do |word|
           url = post.url
-          # Avoid replacing inside <a> tags
+
+          # Match word only in plain text, not inside existing tags
           regex = /(?<!["'>])\b#{Regexp.escape(word)}\b(?!["'<])/
 
           input = input.gsub(regex) do |match|
