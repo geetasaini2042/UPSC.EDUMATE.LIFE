@@ -2,7 +2,7 @@
 title: पाषाण युग 
 categories: [HISTORY]
 tags: [history,stone age,ancient history]
-
+2ords: [पाषाण युग, Stone age]
 description: "NCERT पाठ्यपुस्तक - कक्षा-VI (हमारे अतीत-1), अध्याय-1 (प्रारंभिक वर्णन: क्या, कब, कहाँ और कैसे?), अध्याय-2 (भोजन संग्रह से उत्पादक तक)"
 ---
 
