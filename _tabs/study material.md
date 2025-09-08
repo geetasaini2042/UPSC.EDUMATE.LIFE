@@ -2,16 +2,15 @@
 # the default layout is 'page'
 icon: fas fa-graduation-cap
 order: 3
-#layout: default
-#refactor: true
 ---
 
 {% include lang.html %}
 
-<!-- Yahan pe content placeholder add kiya -->
 <div class="page-content mb-4">
   {{ content }}
 </div>
+
+<!-- पहला Ad -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6225893138851886"
      crossorigin="anonymous"></script>
 <ins class="adsbygoogle"
@@ -23,47 +22,13 @@ order: 3
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
 {% assign all_pinned = site.posts | where: 'pin', 'true' %}
 {% assign all_normal = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
 
-{% assign posts = '' | split: '' %}
-
-<!-- Get pinned posts on current page -->
-
-{% assign visible_start = paginator.page | minus: 1 | times: paginator.per_page %}
-{% assign visible_end = visible_start | plus: paginator.per_page %}
-
-{% if all_pinned.size > visible_start %}
-  {% if all_pinned.size > visible_end %}
-    {% assign pinned_size = paginator.per_page %}
-  {% else %}
-    {% assign pinned_size = all_pinned.size | minus: visible_start %}
-  {% endif %}
-
-  {% for i in (visible_start..all_pinned.size) limit: pinned_size %}
-    {% assign posts = posts | push: all_pinned[i] %}
-  {% endfor %}
-{% else %}
-  {% assign pinned_size = 0 %}
-{% endif %}
-
-<!-- Get normal posts on current page -->
-
-{% assign normal_size = paginator.posts | size | minus: pinned_size %}
-
-{% if normal_size > 0 %}
-  {% if pinned_size > 0 %}
-    {% assign normal_start = 0 %}
-  {% else %}
-    {% assign normal_start = visible_start | minus: all_pinned.size %}
-  {% endif %}
-
-  {% assign normal_end = normal_start | plus: normal_size | minus: 1 %}
-
-  {% for i in (normal_start..normal_end) %}
-    {% assign posts = posts | push: all_normal[i] %}
-  {% endfor %}
-{% endif %}
+<!-- Pagination के लिए final list -->
+{% assign combined_posts = all_pinned | concat: all_normal %}
+{% assign posts = combined_posts | slice: paginator.first_index, paginator.per_page %}
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
@@ -76,19 +41,11 @@ order: 3
           {% unless src contains '//' %}
             {% assign src = post.media_subpath | append: '/' | append: src | replace: '//', '/' %}
           {% endunless %}
-
           {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
 
-          {% assign lqip = null %}
-
-          {% if post.image.lqip %}
-            {% capture lqip %}lqip="{{ post.image.lqip }}"{% endcapture %}
-          {% endif %}
-
           <div class="col-md-5">
-            <img src="{{ src }}" alt="{{ alt }}" {{ lqip }}>
+            <img src="{{ src }}" alt="{{ alt }}">
           </div>
-
           {% assign card_body_col = '7' %}
         {% endif %}
 
@@ -102,17 +59,14 @@ order: 3
 
             <div class="post-meta flex-grow-1 d-flex align-items-end">
               <div class="me-auto">
-                <!-- posted date -->
                 <i class="far fa-calendar fa-fw me-1"></i>
                 {% include datetime.html date=post.date lang=lang %}
 
-                <!-- categories -->
                 {% if post.categories.size > 0 %}
                   <i class="far fa-folder-open fa-fw me-1"></i>
                   <span class="categories">
                     {% for category in post.categories %}
-                      {{ category }}
-                      {%- unless forloop.last -%},{%- endunless -%}
+                      {{ category }}{% unless forloop.last %},{% endunless %}
                     {% endfor %}
                   </span>
                 {% endif %}
@@ -125,15 +79,14 @@ order: 3
                 </div>
               {% endif %}
             </div>
-            <!-- .post-meta -->
           </div>
-          <!-- .card-body -->
         </div>
       </a>
     </article>
   {% endfor %}
 </div>
-<!-- #post-list -->
+
+<!-- दूसरा Ad -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6225893138851886"
      crossorigin="anonymous"></script>
 <ins class="adsbygoogle"
