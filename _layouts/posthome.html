@@ -1,17 +1,14 @@
 ---
 layout: default
-refactor: true
 ---
 
 {% include lang.html %}
 
 {% assign all_pinned = site.posts | where: 'pin', 'true' %}
 {% assign all_normal = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
-
 {% assign posts = '' | split: '' %}
 
-<!-- Get pinned posts on current page -->
-
+<!-- Pagination के हिसाब से pinned posts निकालना -->
 {% assign visible_start = paginator.page | minus: 1 | times: paginator.per_page %}
 {% assign visible_end = visible_start | plus: paginator.per_page %}
 
@@ -29,8 +26,7 @@ refactor: true
   {% assign pinned_size = 0 %}
 {% endif %}
 
-<!-- Get normal posts on current page -->
-
+<!-- Normal posts जोड़ना -->
 {% assign normal_size = paginator.posts | size | minus: pinned_size %}
 
 {% if normal_size > 0 %}
@@ -56,9 +52,7 @@ refactor: true
         {% if post.image %}
           {% assign src = post.image.path | default: post.image %}
           {% capture src %}{% include media-url.html src=src subpath=post.media_subpath %}{% endcapture %}
-
           {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
-
           {% assign lqip = null %}
 
           {% if post.image.lqip %}
@@ -69,7 +63,6 @@ refactor: true
           <div class="col-md-5">
             <img src="{{ src }}" alt="{{ alt }}" {{ lqip }}>
           </div>
-
           {% assign card_body_col = '7' %}
         {% endif %}
 
@@ -83,11 +76,9 @@ refactor: true
 
             <div class="post-meta flex-grow-1 d-flex align-items-end">
               <div class="me-auto">
-                <!-- posted date -->
                 <i class="far fa-calendar fa-fw me-1"></i>
                 {% include datetime.html date=post.date lang=lang %}
 
-                <!-- categories -->
                 {% if post.categories.size > 0 %}
                   <i class="far fa-folder-open fa-fw me-1"></i>
                   <span class="categories">
@@ -106,15 +97,12 @@ refactor: true
                 </div>
               {% endif %}
             </div>
-            <!-- .post-meta -->
           </div>
-          <!-- .card-body -->
         </div>
       </a>
     </article>
   {% endfor %}
 </div>
-<!-- #post-list -->
 
 {% if paginator.total_pages > 1 %}
   {% include post-paginator.html %}
