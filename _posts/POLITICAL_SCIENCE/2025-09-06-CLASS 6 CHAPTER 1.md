@@ -1,8 +1,8 @@
 ---
-title: कक्षा 6 राजनीतिक विज्ञान 1 : विविधता की समझ
+title: "कक्षा 6 राजनीतिक विज्ञान 1 : विविधता की समझ"
 description: 
-  Class 6 Civics – Chapter 1: Understanding Diversity  
-  UPSC-Level Notes (Elevated, Analytical)
+  "Class 6 Civics – Chapter 1: Understanding Diversity  
+  UPSC-Level Notes (Elevated, Analytical)"
 words: [Understanding Diversity, विविधता की समझ, Understanding Diversity  ]
 tags: [POLITICAL SCIENCE, राजनीतिक विज्ञान, विविधता की समझ, Understanding Diversity, विविधता, NCERT SUMMARY, CLASS 6, सामाजिक एवं राजनीतिक जीवन - I, सामाजिक एवं राजनीतिक जीवन - I]
 categories: [POLITICAL SCIENCE, राजनीतिक विज्ञान, NCERT SUMMARY]
