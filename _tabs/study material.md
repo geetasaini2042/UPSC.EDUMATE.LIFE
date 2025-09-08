@@ -2,7 +2,7 @@
 # the default layout is 'page'
 icon: fas fa-graduation-cap
 order: 3
-layout: default
+#layout: default
 #refactor: true
 ---
 
