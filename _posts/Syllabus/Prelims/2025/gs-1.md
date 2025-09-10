@@ -5,7 +5,7 @@ date: 2025-09-10
 categories: [Syllabus, UPSC, Prelims]
 tags: [UPSC, Prelims-2025, GS-1, सिलेबस]
 lang: "hi"
-permalink: /upsc/prelims-2025-gs1-syllabus/
+#permalink: /upsc/prelims-2025-gs1-syllabus/
 ---
 
 # UPSC CSE Prelims 2025 — General Studies (Paper I) सिलेबस
