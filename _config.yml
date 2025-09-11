@@ -171,6 +171,10 @@ collections:
     output: true
     sort_by: order
 
+  current-affaire:
+    output: true
+    permalink: /current-affaire/:title/
+
 defaults:
   - scope:
       path: "" # An empty string here means all files in the project
