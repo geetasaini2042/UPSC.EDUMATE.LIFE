@@ -146,6 +146,15 @@ pwa:
     # shares the same domain name as the current website.
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
+plugins:
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: '/current-affaire/page-:num/'
+  title: ':title - page :num'
+  collection: current-affaire
 
 paginate: 10
 
