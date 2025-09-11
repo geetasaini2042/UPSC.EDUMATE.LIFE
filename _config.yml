@@ -149,7 +149,27 @@ pwa:
 ### New version
 plugins:
   - jekyll-paginate-v2
+#plugins:
+#  - jekyll-paginate-v2
 
+#paginate: off   # पुराना paginate disable करो
+
+collections:
+  current-affaire:
+    output: true
+    permalink: /current-affaire/:title/
+
+pagination:
+  posts:
+    enabled: true
+    collection: posts
+    per_page: 10
+    permalink: '/page:num/'
+  current-affaire:
+    enabled: true
+    collection: current-affaire
+    per_page: 10
+    permalink: '/current-affaire/page:num/'
 
 #pagination: 
 #  enabled: true
