@@ -154,10 +154,6 @@ plugins:
 
 #paginate: off   # पुराना paginate disable करो
 
-collections:
-  current-affaire:
-    output: true
-    permalink: /current-affaire/:title/
 
 pagination:
   posts:
