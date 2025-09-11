@@ -1,49 +1,41 @@
 ---
 layout: default
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: '/current-affaire/page-:num/'
+  title: 'Current Affairs - page :num'
+  collection: current-affaire
 ---
 
 {% include lang.html %}
 
-<div class="px-xl-1 mt-3">
-  <h1 class="mb-4">📰 Current Affairs</h1>
-</div>
-
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in paginator.posts %}
-    <article class="card-wrapper card mb-3 shadow-sm">
-      <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse text-decoration-none text-dark">
+    <article class="card-wrapper card">
+      <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
         {% assign card_body_col = '12' %}
 
         {% if post.image %}
           {% assign src = post.image.path | default: post.image %}
           {% capture src %}{% include media-url.html src=src subpath=post.media_subpath %}{% endcapture %}
           {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
-
           <div class="col-md-5">
-            <img src="{{ src }}" alt="{{ alt }}" class="w-100 h-100 object-fit-cover rounded-start">
+            <img src="{{ src }}" alt="{{ alt }}">
           </div>
           {% assign card_body_col = '7' %}
         {% endif %}
 
         <div class="col-md-{{ card_body_col }}">
           <div class="card-body d-flex flex-column">
-            <h2 class="card-title my-2 mt-md-0">{{ post.title }}</h2>
+            <h1 class="card-title my-2 mt-md-0">{{ post.title }}</h1>
             <div class="card-text content mt-0 mb-3">
               <p>{% include post-description.html %}</p>
             </div>
-            <div class="post-meta flex-grow-1 d-flex align-items-end small text-muted">
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
               <div class="me-auto">
                 <i class="far fa-calendar fa-fw me-1"></i>
                 {% include datetime.html date=post.date lang=lang %}
-                {% if post.categories.size > 0 %}
-                  <i class="far fa-folder-open fa-fw ms-2 me-1"></i>
-                  <span class="categories">
-                    {% for category in post.categories %}
-                      {{ category }}
-                      {%- unless forloop.last -%}, {% endunless -%}
-                    {% endfor %}
-                  </span>
-                {% endif %}
               </div>
             </div>
           </div>
@@ -54,14 +46,20 @@ layout: default
 </div>
 
 <!-- Pagination links -->
-<nav class="pagination d-flex justify-content-center mt-4">
+<div class="pagination">
   {% if paginator.previous_page %}
-    <a class="btn btn-outline-primary me-2" href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Previous</a>
   {% endif %}
 
-  <span class="btn btn-primary disabled">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="current">{{ page }}</span>
+    {% else %}
+      <a href="{{ paginator.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
 
   {% if paginator.next_page %}
-    <a class="btn btn-outline-primary ms-2" href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+    <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
   {% endif %}
-</nav>
+</div>
