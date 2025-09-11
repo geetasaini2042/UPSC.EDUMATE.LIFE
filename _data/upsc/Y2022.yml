@@ -1,0 +1,84 @@
+prelims:
+  gs1:
+    - ""
+  csat:
+    - ""
+
+mains
+  essay:
+    - "https://upsc.gov.in/sites/default/files/QP-CSM-22-ESSAY-190922.pdf"
+  gs1:
+    - "https://upsc.gov.in/sites/default/files/QP-CSM-22-GENERAL-STUDIES-PAPER%20I-190922.pdf"
+  gs2:
+    - "https://upsc.gov.in/sites/default/files/QP-CSM-22-GENERAL-STUDIES-PAPER-II-190922.pdf"
+  gs3:
+    - "https://upsc.gov.in/sites/default/files/QP-CSM-22-GENERAL-STUDIES-PAPER-III-190922.pdf"
+  gs4:
+    - "https://upsc.gov.in/sites/default/files/QP-CSM-22-GENERAL-STUDIES-PAPER%20IV-190922.pdf"
+
+  compulsory:
+    - [Assamese Compulsory, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-ASSAMESE-Compl-280922.pdf"]]
+    - [Bengali Compulsory, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-BENGALI-Compl-280922.pdf"]]
+    - [Bodo Compulsory, [""]]
+    - [English Compulsory, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-ENGLISH-Compl-280922.pdf"]]
+    - [Gujarati Compulsory, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-GUJARATI-Compl-280922.pdf"]]
+    - [Hindi Compulsory, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-HINDI-Compl-280922.pdf"]]
+    - [Kannada Compulsory, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-KANNADA-Compl-280922.pdf"]]
+    - [Kashimiri Compulsory, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-KASHMIRI-Compl-280922.pdf"]]
+    - [Maithili Compulsory, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-MARATHI-Compl-280922.pdf"]]
+    - [Malayalam Compulsory, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-MALAYALAM-Compl-280922.pdf"]]
+    - [Marathi Compulsory, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-MARATHI-Compl-280922.pdf"]]
+    - [Nepali Compulsory, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-NEPALI-Compl-280922.pdf"]]
+    - [Odia Compulsory, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-ODIA-Compl-280922.pdf"]]
+    - [Punjabi Compulsory, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-PUNJABI-Compl-280922.pdf"]]
+    - [Sanskrit Compulsory, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-SANSKRIT-Compl-280922.pdf"]]
+    - [Sindhi Compulsory, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-PUNJABI-Compl-280922.pdf"]]
+    - [Tamil Compulsory, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-TAMIL-Compl-280922.pdf"]]
+    - [Telugu Compulsory, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-TELUGU-Compl-280922.pdf"]]
+    - [Urdu Compulsory, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-URDU-Compl-280922.pdf"]]
+    
+  optional:
+    - [Agriculture, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-AGRICULTURE-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-AGRICULTURE-PAPER-II-280922.pdf"]]
+    - [Animal_Husbandry_and_Veterinary_Science, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-ANIMAL-HUSBANDRY-AND-VETERINARY-SCIENCE-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-ANIMAL-HUSBANDRY-AND-VETERINARY-SCIENCE-PAPER-II-280922.pdf"]]
+    - [Anthropology, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-ANTHROPOLOGY-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-ANTHROPOLOGY-PAPER-II-280922.pdf"]]
+    - [Botany, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-BOTANY-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-BOTANY-PAPER-II-280922.pdf"]]
+    - [Chemistry, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-CHEMISTRY-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-CHEMISTRY-PAPER-II-280922.pdf"]]
+    - [Civil_Engineering, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-CIVIL-ENGINEERING-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-CIVIL-ENGINEERING-PAPER-II-280922.pdf"]]
+    - [Commerce_and_Accountancy, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-COMMERCE-AND-ACCOUNTANCY-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-COMMERCE-AND-ACCOUNTANCY-PAPER-II-280922.pdf"]]
+    - [Economics, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-ECONOMICS-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-ECONOMICS-PAPER-II-280922.pdf"]]
+    - [Electrical_Engineering, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-ELECTRICAL-ENGINEERING-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-ELECTRICAL-ENGINEERING%20PAPER-II-280922.pdf"]]
+    - [Geography, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-GEOGRAPHY-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-GEOGRAPHY-PAPER-II-280922.pdf"]]
+    - [Geology Paper, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-GEOLOGY-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-GEOLOGY-PAPER-II-280922.pdf"]]
+    - [History Paper, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-HISTORY-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-HISTORY-PAPER-II-280922.pdf"]]
+    - [Law Paper, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-LAW-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-LAW-PAPER-II-280922.pdf"]]
+    - [Management Paper, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-MANAGEMENT-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-MANAGEMENT-PAPER-II-280922.pdf"]]
+    - [Mathematics Paper, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-MATHEMATICS-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-MATHEMATICS-PAPER-II-280922.pdf"]]
+    - [Mechanical Engineering Paper, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-MECHANICAL-ENGINEERING-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-MECHANICAL-ENGINEERING-PAPER-II-280922.pdf"]]
+    - [Medical Science Paper, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-MEDICAL-SCIENCE-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-MEDICAL-SCIENCE-PAPER-II-280922.pdf"]]
+    - [Philosophy Paper, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-PHILOSOPHY-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-PHILOSOPHY-PAPER-II-280922.pdf"]]
+    - [Physics Paper, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-PHYSICS-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-PHYSICS-PAPER-II-280922.pdf"]]
+    - [Political Science and International Relations Paper, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-POLITICAL-SCIENCE-AND-INTERNATIONAL-RELATIONS-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-POLITICAL-SCIENCE-AND-INTERNATIONAL-RELATIONS-PAPER-II-280922.pdf"]]
+    - [Psychology Paper, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-PSYCHOLOGY-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-PSYCHOLOGY-PAPER-II-280922.pdf"]]
+    - [Public Administration Paper, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-PUBLIC-ADMINISTRATION-PAPER-I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-PUBLIC-ADMINISTRATION-PAPER-II-280922.pdf"]]
+    - [Sociology Paper, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-SOCIOLOGY%20PAPER%20-%20I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-SOCIOLOGY%20PAPER%20-%20II-280922.pdf"]]
+    - [Statistics Paper, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-STATISTICS%20PAPER%20-%20I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-STATISTICS%20PAPER%20-%20II-280922.pdf"]]
+    - [Zoology Paper, ["https://upsc.gov.in/sites/default/files/QP-CSM-22-ZOOLOGY%20PAPER%20-%20I-280922.pdf", "https://upsc.gov.in/sites/default/files/QP-CSM-22-ZOOLOGY%20PAPER%20-%20II-280922.pdf"]]
+
+  literature:
+    - [Assamese Literature, ["", ""]]
+    - [Bengali Literature, ["", ""]]
+    - [English Literature, ["", ""]]
+    - [Gujarati Literature, ["", ""]]
+    - [Hindi Literature, ["", ""]]
+    - [Kannada Literature Paper, ["", ""]]
+    - [Maithili Literature Paper, ["", ""]]
+    - [Malayalam Literature Paper, ["", ""]]
+    - [Manipuri Literature Paper, ["", ""]]
+    - [Marathi Literature Paper, ["", ""]]
+    - [Odia Literature Paper, ["", ""]]
+    - [Punjabi Literature, ["", ""]]
+    - [Sindhi Literature Paper, ["", ""]]
+    - [Sanskrit Literature Paper, ["", ""]]
+    - [Tamil Literature Paper, ["", ""]]
+    - [Telugu Literature Paper, ["", ""]]
+    - [Urdu Literature Paper, ["", ""]]
