@@ -1,7 +1,7 @@
 ---
 title: "भारत का नया अंतरिक्ष मिशन: चंद्रयान-4"
 date: 2025-09-11
-categories: ["विज्ञान एवं तकनीक", "भारत"]
+#categories: ["विज्ञान एवं तकनीक", "भारत"]
 #image: 
   #path: /assets/img/current-affair/chandrayaan4.jpg
   #alt: "चंद्रयान-4 मिशन"
