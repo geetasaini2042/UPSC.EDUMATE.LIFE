@@ -1,4 +1,4 @@
 ---
-layout: default
+layout: current-affaire 
 permalink: '/current-affaire/'
 ---
