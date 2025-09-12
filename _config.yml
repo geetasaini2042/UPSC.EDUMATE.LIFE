@@ -165,7 +165,7 @@ pagination:
     after: 2
   collections:
     - posts
-    - current-affairs
+    - current-affaire 
 
 collections:
   tabs:
@@ -173,7 +173,7 @@ collections:
     sort_by: order
   current-affairs:
     output: true
-    permalink: /current-affairs/:path/
+    permalink: /current-affaire/:path/
 # The base URL of your site
 baseurl: ""
 
